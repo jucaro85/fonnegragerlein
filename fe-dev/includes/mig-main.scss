@@ -17,6 +17,30 @@ $black: #4a4a4a;
 
 /* HOME SERVICES */
 .fg-services-item{
-	padding: 10px;
-	article{ border-top: 2px solid $green; }
+	padding: 10px; color: $black;
+	article{ border: 1px solid #E0E0E0; border-top: 2px solid $green; }
+	.parts{ vertical-align: bottom; }
+	.fg-services-itemDescCol{ padding: 20px; }
+	h2{ display: block; margin: 0; margin-bottom: 20px; font-size: 20px; text-transform: uppercase; }
+	.fg-services-itemDesc{ font-size: 13px; font-weight: 400; line-height: 1.4; }
+	.fg-services-itemIconCol{
+		text-align: right;
+		img{ display: inline-block; vertical-align: bottom; width: auto; max-width: 100%; }
+	}
+}
+
+.fg-services-contact{
+	margin: 60px 0;
+	h2{ display: block; width: 90%; max-width: 480px; margin: 0 auto; padding: 50px 0 30px; border-top: 2px solid $green; font-size: 24px; font-weight: 400; color: $green; }
+	.fg-services-contactDesc{ display: block; margin-bottom: 30px; font-size: 18px; font-weight: 400; color: $grey; }
+}
+
+/* HOME BLOG */
+#fg-homeblog{ padding: 20px 0; }
+.fg-homeblog-artlist{ padding: 0 20px; }
+.fg-homeblog-item{
+	padding: 20px;
+	article{ border-top: 2px solid $green; color: $black; }
+	.makeBg{ display: block; width: 100%; height: 300px; }
+	h3{ display: block; margin: 30px 0 10px;  font-size: 16px; font-weight: 400; line-height: 1.4; }
 }
