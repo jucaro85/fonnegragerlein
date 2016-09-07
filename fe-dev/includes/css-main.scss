@@ -19,10 +19,15 @@ $black: #515151;
 	a:focus{ text-decoration: inherit; color: inherit; }
 	.makeBg{ background-color: #EEE; background-position: 50% 50%; background-size: cover; }
 	.button{
-		display: inline-block; vertical-align: middle; padding: 10px 20px; border: 1px solid $green; font-size: 14px; font-weight: 400; text-align: center; text-decoration: none; background: #fff; color: $black; transition: all 0.5s ease-in-out;
+		display: inline-block; vertical-align: middle; padding: 10px 20px; border: 1px solid $green; font-size: 16px; font-weight: 700; text-align: center; text-decoration: none; text-transform: uppercase; background: #fff; color: $black; transition: all 0.5s ease-in-out;
 		&:hover,
 		&.active{ text-decoration: none; background: $green; color: $black; }
 	}
+	.fg-homesection-intro{
+		padding: 30px 0;
+		h2{ display: block; margin: 0; margin-bottom: 40px; font-size: 24px; font-weight: 400; line-height: 1; text-transform: uppercase; color: $greent; }
+	}
+	.fg-homesection-introDesc{ margin-bottom: 20px; font-size: 14px; font-weight: 300; line-height: 1.8; color: $black; }
 
 /* Home Banner */
 	#fg-mainBanner{ position:relative; }
@@ -49,12 +54,10 @@ $black: #515151;
 
 /* ESTATES GRID */
 	#fg-featuredEstates{ display: block; padding: 20px 0; background: #fff; }
-	.fg-featuredEstates-intro{
-		padding: 30px 0;
-		h2{ display: block; margin: 0; margin-bottom: 40px; font-size: 24px; font-weight: 400; line-height: 1; text-transform: uppercase; color: $greent; }
+	.fg-featuredEstates-buttons{
+		font-size: 0;
+		.button{ font-size: 14px; font-weight: 400; text-transform: none; }
 	}
-	.fg-featuredEstates-introDesc{ margin-bottom: 20px; font-size: 14px; font-weight: 300; line-height: 1.8; color: $black; }
-	.fg-featuredEstates-buttons{ font-size: 0; }
 
 	.fg-estatesGrid{ display: block; padding: 20px; font-size: 0; }
 	.fg-estatesItem{ display: inline-block; vertical-align: top; float: none; padding: 20px; }
@@ -91,5 +94,5 @@ $black: #515151;
 	}
 	.fg-featuredEstates-cta{
 		padding: 20px 0;
-		.button{ width: 280px; font-size: 16px; font-weight: 700; text-transform: uppercase; }
+		.button{ width: 280px; }
 	}

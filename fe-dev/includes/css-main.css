@@ -18,10 +18,11 @@ a:focus {
   vertical-align: middle;
   padding: 10px 20px;
   border: 1px solid #26f044;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   background: #fff;
   color: #515151;
   transition: all 0.5s ease-in-out; }
@@ -29,6 +30,25 @@ a:focus {
     text-decoration: none;
     background: #26f044;
     color: #515151; }
+
+.fg-homesection-intro {
+  padding: 30px 0; }
+  .fg-homesection-intro h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #19d235; }
+
+.fg-homesection-introDesc {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #515151; }
 
 /* Home Banner */
 #fg-mainBanner {
@@ -132,27 +152,12 @@ a:focus {
   padding: 20px 0;
   background: #fff; }
 
-.fg-featuredEstates-intro {
-  padding: 30px 0; }
-  .fg-featuredEstates-intro h2 {
-    display: block;
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #19d235; }
-
-.fg-featuredEstates-introDesc {
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.8;
-  color: #515151; }
-
 .fg-featuredEstates-buttons {
   font-size: 0; }
+  .fg-featuredEstates-buttons .button {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none; }
 
 .fg-estatesGrid {
   display: block;
@@ -299,7 +304,4 @@ a:focus {
 .fg-featuredEstates-cta {
   padding: 20px 0; }
   .fg-featuredEstates-cta .button {
-    width: 280px;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase; }
+    width: 280px; }
