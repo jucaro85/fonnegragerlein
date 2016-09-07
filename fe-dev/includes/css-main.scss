@@ -1,27 +1,95 @@
 /* FG Main Styles */
+@charset "utf-8";
 
 // VARS
 $green: #26f044;
+$greent: #19d235;
 $black: #515151;
 
-
-#mainHeader-cont{  height: 100px;  }
-#mainHeader{position: fixed;top: 0; left: 0; right:0; height: 100px; background:#fff; z-index: 10;}
-#mainHeader-menu{ position:absolute; right:30px; top: 50%; transform: translateY(-50%); }
-#mainHeader-logo{ position: absolute; top: 50%; transform: translateY(-50%); left: 50px; }
-.smallContainer{ width: 720px; margin: 0 auto; background: rgba(0,0,0,.2); padding: 20px; }
-#mainHeader-menu{ 
-	li{ display: inline-block; }
-	a{ display: block; padding: 20px;  }
-	a:hover{ background:#069; color:#FFF;}
+// MIXINS
+@mixin resetUL() {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
-#galeria img{ max-width:100%; max-height:500px; display: block; margin: 0 auto;}
+
+/* Generales */
+	body{font-family: "Proxima Nova", 'Montserrat', sans-serif;}
+	a:focus{ text-decoration: inherit; color: inherit; }
+	.makeBg{ background-color: #EEE; background-position: 50% 50%; background-size: cover; }
+	.button{
+		display: inline-block; vertical-align: middle; padding: 10px 20px; border: 1px solid $green; font-size: 14px; font-weight: 400; text-align: center; text-decoration: none; background: #fff; color: $black; transition: all 0.5s ease-in-out;
+		&:hover,
+		&.active{ text-decoration: none; background: $green; color: $black; }
+	}
+
+/* Home Banner */
+	#fg-mainBanner{ position:relative; }
+		.fg-slickHome-pic{ height:500px; background-size:cover; background-position:50% 50%; }
+	#fg-formFinder-home{ position:absolute; top:50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; 
+		.fg-formFinder{ display: inline-block; text-align:left; }
+	}
+
+/* Formularios de búsqueda de inmuebeles */
+	.fg-formFinder-title{color: #111; font-size: 16px;font-weight: 600; line-height:110%; padding:.9em 1.25em; margin: 0; background-color: #26f044; text-transform:uppercase; position: relative;}
+	.fg-formFinder-title:after{ position:absolute; top: 100%; left: 16.666%; content:""; border:solid 7px transparent; border-top-color:#26f044; margin-left:-15px;}
+	.fg-formFinder-cont{ background-color:rgba(255,255,255,.8); padding:15px 40px; font-size:0; }
+	.fg-formFinder-input{font-size: 13px; display: inline-block; margin:10px 0 10px 1px; vertical-align: top;  }
+	.fg-formFinder-btn{ background:#26f044; position: relative;  }
+	.fg-formFinder-btn .fa{ color:#fff; height: 40px; width:40px; text-align: center; line-height: 40px; font-size:18px; }
+	.fg-formFinder-btn input{ position: absolute; top: 0; bottom: 0; left: 0; right:0; background:transparent; color:transparent; opacity: .05; cursor: pointer; }
+
+/* Formularios */
+	.fg-select{ position:relative; }
+	.fg-select:after{ position: absolute; top:0; right: 0; bottom:0; width:40px; background:#FFF; }
+	.fg-select select{ -moz-appearance:textfield; -webkit-appeareance:textfield; background: #FFF; appearence:none; border:0; height:40px; padding:0 20px 0 10px; }
+
 
 
 /* ESTATES GRID */
-#fg-featuredEstates{ display: block; padding: 20px; background: #fff; }
-.fg-featuredEstates-intro{
-	padding: 30px 0;
-	h2{ display: block; margin: 0; margin-bottom: 30px; font-size: 24px; font-weight: 400; line-height: 1; text-transform: uppercase; color: $green; }
-}
-.fg-featuredEstates-introDesc{ font-size: 14px; color: $black; }
+	#fg-featuredEstates{ display: block; padding: 20px 0; background: #fff; }
+	.fg-featuredEstates-intro{
+		padding: 30px 0;
+		h2{ display: block; margin: 0; margin-bottom: 40px; font-size: 24px; font-weight: 400; line-height: 1; text-transform: uppercase; color: $greent; }
+	}
+	.fg-featuredEstates-introDesc{ margin-bottom: 20px; font-size: 14px; font-weight: 300; line-height: 1.8; color: $black; }
+	.fg-featuredEstates-buttons{ font-size: 0; }
+
+	.fg-estatesGrid{ display: block; padding: 20px; font-size: 0; }
+	.fg-estatesItem{ display: inline-block; vertical-align: top; float: none; padding: 20px; }
+	.fg-estatesItem-art{ display: block; border-top: 2px solid $green; position: relative; }
+	.fg-estatesItem-category{
+		display: block; width: 42px; height: 42px; line-height: 42px; text-align: center; background: $green; position: absolute; top: 0; left: 15px; z-index: 2;
+		&::after{ content: " "; display: block; width: 0; height: 0;border-style: solid; border-width: 15px 21px 0 21px; border-color: $green transparent transparent transparent; position: absolute; bottom: -15px; left: 0; }
+		img{ display: inline-block; vertical-align: middle; width: auto; max-width: 38px; height: auto; max-height: 38px; }
+	}
+	.fg-estatesItem-price{ display: block; padding: 4px 8px; font-size: 16px; font-weight: 400; background: rgba($green, 0.7); color: #fff; position: absolute; top: 10px; right: 10px; z-index: 2; }
+	.fg-estatesItem-addToFav{
+		display: block; width: 50px; height: 50px; border-radius: 50%; font-size: 24px; line-height: 50px; text-align: center; text-decoration: none; background: #fff; color: $black; position: absolute; top: 235px; right: 10px; z-index: 2;
+		&:hover,
+		&.act{ text-decoration: none; background: $green; color: #fff; }
+	}
+	.fg-estateItem-gallery{
+		@include resetUL(); background: #eee;
+		li{ display: block; }
+		.makeBg{ display: block; width: 100%; height: 300px; }
+		.slick-arrow{ display: block; width: 38px; height: 38px; margin-top: -16px; font-size: 38px; line-height: 38px; text-align: center; color: #fff; cursor: pointer; position: absolute; top: 50%; z-index: 2; }
+		.slick-prev{ left: 5px; }
+		.slick-next{ right: 5px; }
+		.slick-disabled{ opacity: 0.2; cursor: default; }
+	}
+	.fg-estatesItem-desc{
+		padding: 10px 0;
+		h2{ display: block; margin: 0; margin-bottom: 5px; font-size: 16px; font-weight: 400; line-height: 1; }
+		a{ text-decoration: none; color: $black; }
+	}
+	.fg-estatesItem-data{
+		@include resetUL();
+		li{ display: inline-block; vertical-align: middle; font-size: 14px; font-weight: 400; line-height: 1; color: $black; }
+		li + li::before{ content: "-"; display: inline-block; vertical-align: baseline; margin: 0 3px; }
+	}
+	.fg-featuredEstates-cta{
+		padding: 20px 0;
+		.button{ width: 280px; font-size: 16px; font-weight: 700; text-transform: uppercase; }
+	}
