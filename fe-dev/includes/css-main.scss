@@ -2,11 +2,14 @@
 
 /* Generales */
 	body{font-family: "Proxima Nova", 'Montserrat', sans-serif;}
+	.container{ max-width:1060px; padding: 0 40px; margin:0 auto;}
+	.smallContainer{ max-width:800px; padding: 0 40px; margin:0 auto;}
+	.coverBg{ background-size:cover; background-position:50% 50%;}
 
 /* Home Banner */
 	#fg-mainBanner{ position:relative; }
-		.fg-slickHome-pic{ height:500px; background-size:cover; background-position:50% 50%; }
-	#fg-formFinder-home{ position:absolute; top:50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; 
+		.fg-slickHome-pic{ height:500px; }
+	#fg-formFinder-home{ position:absolute; top:50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; margin-top: 50px;
 		.fg-formFinder{ display: inline-block; text-align:left; }
 	}
 
@@ -14,14 +17,20 @@
 	.fg-formFinder-title{color: #111; font-size: 16px;font-weight: 600; line-height:110%; padding:.9em 1.25em; margin: 0; background-color: #26f044; text-transform:uppercase; position: relative;}
 	.fg-formFinder-title:after{ position:absolute; top: 100%; left: 16.666%; content:""; border:solid 7px transparent; border-top-color:#26f044; margin-left:-15px;}
 	.fg-formFinder-cont{ background-color:rgba(255,255,255,.8); padding:15px 40px; font-size:0; }
-	.fg-formFinder-input{font-size: 13px; display: inline-block; margin:10px 0 10px 1px; vertical-align: top;  }
-	.fg-formFinder-btn{ background:#26f044; position: relative;  }
+	.fg-formFinder-input{font-size: 13px; display: inline-block; margin:10px 0 10px 1px; vertical-align: top; min-width: 180px; }
+	.fg-formFinder-inputShort{ min-width:120px;}
+	.fg-formFinder-btn{ background:#26f044; position: relative; min-width:40px; }
 	.fg-formFinder-btn .fa{ color:#fff; height: 40px; width:40px; text-align: center; line-height: 40px; font-size:18px; }
 	.fg-formFinder-btn input{ position: absolute; top: 0; bottom: 0; left: 0; right:0; background:transparent; color:transparent; opacity: .05; cursor: pointer; }
 
 /* Formularios */
 	.fg-select{ position:relative; }
-	.fg-select:after{ position: absolute; top:0; right: 0; bottom:0; width:40px; background:#FFF; }
-	.fg-select select{ -moz-appearance:textfield; -webkit-appeareance:textfield; background: #FFF; appearence:none; border:0; height:40px; padding:0 20px 0 10px; }
+	.fg-select:after{ position: absolute; top:0; right: 0; bottom:0; width:40px; background:#FFF; font-family:'FontAwesome'; content:"\f0d7"; line-height:40px; text-align:center; pointer-events:none }
+	.fg-select select{ -moz-appearance:textfield; -webkit-appeareance:textfield; background: #FFF; appearence:none; border:0; height:40px; padding:0 15px 0 7px; width:100%; }
 
-
+/* INTRODUCING FG HOME */
+	.fg-introHome-pic{ background:#000; text-align:center; color:#f9f9f9; position:relative; }
+	.fg-introHome-pic .coverBg{ position: absolute; top:0; left: 0; right: 0; bottom: 0;  }
+	.fg-introHome-text, .fg-introHome-title{ color:#f9f9f9;}
+	.fg-introHome-title{ margin:0; }
+	.fg-introHome-list{ list-style: none; padding: 0; margin: 0 auto; }

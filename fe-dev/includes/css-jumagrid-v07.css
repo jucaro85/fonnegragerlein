@@ -3,7 +3,7 @@ Juma Grid css
 Developed by Jucaro
 V 0.7 (Eng - version) - 07.Sep.2016
 */
-
+*{ box-sizing: border-box; }
 .inlineParts{ font-size: 0;}
 .parts{ float: left; box-sizing: border-box;}
 .parts.flip{ float: right;}

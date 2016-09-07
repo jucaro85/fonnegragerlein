@@ -4,14 +4,26 @@
 body {
   font-family: "Proxima Nova", 'Montserrat', sans-serif; }
 
+.container {
+  max-width: 1060px;
+  padding: 0 40px;
+  margin: 0 auto; }
+
+.smallContainer {
+  max-width: 800px;
+  padding: 0 40px;
+  margin: 0 auto; }
+
+.coverBg {
+  background-size: cover;
+  background-position: 50% 50%; }
+
 /* Home Banner */
 #fg-mainBanner {
   position: relative; }
 
 .fg-slickHome-pic {
-  height: 500px;
-  background-size: cover;
-  background-position: 50% 50%; }
+  height: 500px; }
 
 #fg-formFinder-home {
   position: absolute;
@@ -19,7 +31,8 @@ body {
   transform: translateY(-50%);
   text-align: center;
   left: 0;
-  right: 0; }
+  right: 0;
+  margin-top: 50px; }
   #fg-formFinder-home .fg-formFinder {
     display: inline-block;
     text-align: left; }
@@ -54,11 +67,16 @@ body {
   font-size: 13px;
   display: inline-block;
   margin: 10px 0 10px 1px;
-  vertical-align: top; }
+  vertical-align: top;
+  min-width: 180px; }
+
+.fg-formFinder-inputShort {
+  min-width: 120px; }
 
 .fg-formFinder-btn {
   background: #26f044;
-  position: relative; }
+  position: relative;
+  min-width: 40px; }
 
 .fg-formFinder-btn .fa {
   color: #fff;
@@ -89,7 +107,12 @@ body {
   right: 0;
   bottom: 0;
   width: 40px;
-  background: #FFF; }
+  background: #FFF;
+  font-family: 'FontAwesome';
+  content: "\f0d7";
+  line-height: 40px;
+  text-align: center;
+  pointer-events: none; }
 
 .fg-select select {
   -moz-appearance: textfield;
@@ -98,4 +121,30 @@ body {
   appearence: none;
   border: 0;
   height: 40px;
-  padding: 0 20px 0 10px; }
+  padding: 0 15px 0 7px;
+  width: 100%; }
+
+/* INTRODUCING FG HOME */
+.fg-introHome-pic {
+  background: #000;
+  text-align: center;
+  color: #f9f9f9;
+  position: relative; }
+
+.fg-introHome-pic .coverBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.fg-introHome-text, .fg-introHome-title {
+  color: #f9f9f9; }
+
+.fg-introHome-title {
+  margin: 0; }
+
+.fg-introHome-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; }
