@@ -1,15 +1,27 @@
 /* ICBF Main Styles */
 
+/* Generales */
+	body{font-family: "Proxima Nova", 'Montserrat', sans-serif;}
 
-#mainHeader-cont{  height: 100px;  }
-#mainHeader{position: fixed;top: 0; left: 0; right:0; height: 100px; background:#fff; z-index: 10;}
-#mainHeader-menu{ position:absolute; right:30px; top: 50%; transform: translateY(-50%); }
-#mainHeader-logo{ position: absolute; top: 50%; transform: translateY(-50%); left: 50px; }
-.smallContainer{ width: 720px; margin: 0 auto; background: rgba(0,0,0,.2); padding: 20px; }
-#mainHeader-menu{ 
-	li{ display: inline-block; }
-	a{ display: block; padding: 20px;  }
-	a:hover{ background:#069; color:#FFF;}
-}
-#galeria img{ max-width:100%; max-height:500px; display: block; margin: 0 auto;}
+/* Home Banner */
+	#fg-mainBanner{ position:relative; }
+		.fg-slickHome-pic{ height:500px; background-size:cover; background-position:50% 50%; }
+	#fg-formFinder-home{ position:absolute; top:50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; 
+		.fg-formFinder{ display: inline-block; text-align:left; }
+	}
+
+/* Formularios de búsqueda de inmuebeles */
+	.fg-formFinder-title{color: #111; font-size: 16px;font-weight: 600; line-height:110%; padding:.9em 1.25em; margin: 0; background-color: #26f044; text-transform:uppercase; position: relative;}
+	.fg-formFinder-title:after{ position:absolute; top: 100%; left: 16.666%; content:""; border:solid 7px transparent; border-top-color:#26f044; margin-left:-15px;}
+	.fg-formFinder-cont{ background-color:rgba(255,255,255,.8); padding:15px 40px; font-size:0; }
+	.fg-formFinder-input{font-size: 13px; display: inline-block; margin:10px 0 10px 1px; vertical-align: top;  }
+	.fg-formFinder-btn{ background:#26f044; position: relative;  }
+	.fg-formFinder-btn .fa{ color:#fff; height: 40px; width:40px; text-align: center; line-height: 40px; font-size:18px; }
+	.fg-formFinder-btn input{ position: absolute; top: 0; bottom: 0; left: 0; right:0; background:transparent; color:transparent; opacity: .05; cursor: pointer; }
+
+/* Formularios */
+	.fg-select{ position:relative; }
+	.fg-select:after{ position: absolute; top:0; right: 0; bottom:0; width:40px; background:#FFF; }
+	.fg-select select{ -moz-appearance:textfield; -webkit-appeareance:textfield; background: #FFF; appearence:none; border:0; height:40px; padding:0 20px 0 10px; }
+
 
