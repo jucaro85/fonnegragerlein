@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+// VARS
+$green: #26f044;
+$greent: #19d235;
+$grey: #515151;
+$black: #4a4a4a;
+
+// MIXINS
+@mixin resetUL() {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/* HOME SERVICES */
+.fg-services-item{
+	padding: 10px;
+	article{ border-top: 2px solid $green; }
+}
