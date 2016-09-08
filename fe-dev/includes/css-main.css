@@ -407,6 +407,81 @@ a:focus {
     font-weight: 700;
     text-transform: uppercase; }
 
+/* FG Main Styles */
+/* HOME BANNER */
+.fg-formFinder-btn-txt {
+  display: none; }
+
+/* HOME CONTACT */
+#fg-homecontact {
+  padding: 40px 0;
+  background: #f8f8f8; }
+
+.fg-homecontact-form {
+  color: #515151; }
+  .fg-homecontact-form .parts {
+    padding: 0 20px; }
+
+.fg-homecontact-input {
+  margin-bottom: 25px; }
+  .fg-homecontact-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer; }
+  .fg-homecontact-input input[type=text],
+  .fg-homecontact-input input[type=email],
+  .fg-homecontact-input select,
+  .fg-homecontact-input textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #d3d3d3;
+    background: #fff; }
+    .fg-homecontact-input input[type=text]:focus,
+    .fg-homecontact-input input[type=email]:focus,
+    .fg-homecontact-input select:focus,
+    .fg-homecontact-input textarea:focus {
+      background: #f9f9f9; }
+  .fg-homecontact-input input[type=text],
+  .fg-homecontact-input input[type=email],
+  .fg-homecontact-input select {
+    height: 40px; }
+  .fg-homecontact-input .fg-select::after {
+    border: 1px solid #d3d3d3;
+    border-left: 0; }
+  .fg-homecontact-input textarea {
+    resize: none; }
+
+.fg-homecontact-agree {
+  display: table; }
+  .fg-homecontact-agree input[type=checkbox],
+  .fg-homecontact-agree label {
+    display: table-cell;
+    vertical-align: middle; }
+  .fg-homecontact-agree input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px; }
+  .fg-homecontact-agree label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2; }
+  .fg-homecontact-agree a {
+    text-decoration: underline;
+    color: #515151; }
+
+.fg-homecontact-captcha {
+  margin: 20px 0; }
+
+.fg-homecontact-cta .button {
+  display: block;
+  width: 100%;
+  background: #26f044; }
+
 /* HOME SERVICES */
 .fg-services-item {
   padding: 10px;
@@ -447,13 +522,18 @@ a:focus {
     border-top: 2px solid #26f044;
     font-size: 24px;
     font-weight: 400;
+    text-transform: uppercase;
     color: #26f044; }
-  .fg-services-contact .fg-services-contactDesc {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #515151; }
+
+.fg-services-contactDesc {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #515151; }
+
+.fg-services-contactCta .button {
+  width: 280px; }
 
 /* HOME BLOG */
 #fg-homeblog {
@@ -473,7 +553,112 @@ a:focus {
     height: 300px; }
   .fg-homeblog-item h3 {
     display: block;
-    margin: 30px 0 10px;
+    margin: 0;
+    margin-top: 30px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4; }
+  .fg-homeblog-item time {
+    display: block;
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: 400; }
+
+.fg-homeblog-itemCategory {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #19d235; }
+
+.fg-homeblog-itemDesc {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.fg-homeblog-itemCta {
+  margin-top: 20px; }
+
+.fg-homeblog-loadmore {
+  padding: 40px 0; }
+  .fg-homeblog-loadmore .button {
+    width: 280px; }
+
+/*--------------------------------------------------------------------------------
+	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
+--------------------------------------------------------------------------------*/
+@media only screen and (max-width: 959px) {
+  .fg-estatesGrid {
+    padding: 10px; }
+  .fg-estatesItem {
+    padding: 15px; }
+  .fg-introHome-cont {
+    padding: 80px 20px 140px; }
+  .fg-introHome-list {
+    margin-left: 0; }
+  .fg-introHome-item {
+    padding: 20px 0; }
+  .fg-homeblog-artlist {
+    padding: 0 10px; }
+  .fg-homeblog-item {
+    padding: 15px; } }
+
+@media only screen and (max-width: 679px) {
+  .container {
+    padding: 0 20px; }
+  .fg-formFinder-cont {
+    padding: 10px 20px; }
+  .fg-formFinder-input {
+    display: block; }
+  .fg-formFinder-btn {
+    width: 120px;
+    margin-left: auto; }
+    .fg-formFinder-btn .fa {
+      vertical-align: middle; }
+    .fg-formFinder-btn input {
+      display: block;
+      width: 100%; }
+    .fg-formFinder-btn .fg-formFinder-btn-txt {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #fff; }
+  .fg-slickHome-pic {
+    height: 340px; }
+  .fg-homesection-intro {
+    padding: 20px; }
+  .fg-estatesItem {
+    padding: 10px; }
+  .fg-featuredEstates-buttons .button {
+    display: block;
+    width: 100%; }
+  .fg-featuredEstates-cta .button {
+    width: auto; }
+  #fg-introductionHome {
+    padding-bottom: 40px; }
+  .fg-introHome-cont {
+    padding: 40px 20px 100px; }
+  .fg-introHome-list {
+    margin-top: -60px; }
+  .fg-services-item {
+    padding: 10px 0; }
+  .fg-services-contact {
+    margin: 30px 0; }
+    .fg-services-contact h2 {
+      padding: 30px 0 15px; }
+  .fg-services-contactDesc {
+    padding: 0 20px; }
+  .fg-services-contactCta .button {
+    width: auto; }
+  .fg-homecontact-form {
+    overflow: hidden; }
+    .fg-homecontact-form .parts {
+      padding: 0; }
+  .fg-homeblog-item {
+    padding: 10px; }
+  .fg-homeblog-loadmore .button {
+    width: auto; } }

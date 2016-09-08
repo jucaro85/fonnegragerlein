@@ -1,6 +1,5 @@
 function EstatesSlider(){
 	$('.fg-estateItem-gallery').each(function(){
-		console.log($('li', this).length);
 		if($('li', this).length > 1){
 			$(this).slick({
 				infinite: false,

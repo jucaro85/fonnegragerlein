@@ -103,6 +103,7 @@
                   <div class="fg-formFinder-input fg-formFinder-btn">
                      <span class="fa fa-search"></span>
                      <input class="btn" type="submit" name="">
+                     <span class="fg-formFinder-btn-txt">Buscar</span>
                   </div>
                </div>
             </div>
@@ -114,7 +115,7 @@
       <section id="fg-featuredEstates">
 
          <div class="fg-featuredEstates-intro fg-homesection-intro clearfix">
-            <div class="m-4-6ths parts centerPart text-center">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
                <h2>Propiedades Destacadas</h2>
                <div class="fg-homesection-introDesc">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas non dolorem ipsam totam, facere placeat velit cum assumenda. Aliquam recusandae vero officia exercitationem, sapiente nihil dolores praesentium eos omnis.</p>
@@ -329,20 +330,20 @@
             </div>
          </div>
          <div class="container">
-            <ul class="fg-introHome-list">
-               <li class="m-1-3rd parts fg-introHome-item">
+            <ul class="fg-introHome-list clearfix inlineParts text-center">
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item">
                   <div class="fg-introHome-itemPic coverBg" style="background:url('https://hd.unsplash.com/photo-1420393438053-4defbbd0c7a1')"></div>
                   <h2 class="fg-introHome-itemTitle">Marketing inmobiliario</h2>
                   <p class="fg-introHome-itemText">Estudiamos cada proyecto individualmente para garantizar un resultado acorde con sus expectativas para mostrar su inmueble.</p>
                   <a href="#" class="button">Ver más</a>
                </li>
-               <li class="m-1-3rd parts fg-introHome-item">
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item">
                   <div class="fg-introHome-itemPic coverBg" style="background:url('https://hd.unsplash.com/photo-1469022563428-aa04fef9f5a2')"></div>
                   <h2 class="fg-introHome-itemTitle">Seguros de arrendamiento</h2>
                   <p class="fg-introHome-itemText">Garantizamods el pago oportunos de renta, cuotas de administración e impuestos a través de nuestra alianza con Seguros Bolívar. </p>
                   <a href="#" class="button">Ver más</a>
                </li>
-               <li class="m-1-3rd parts fg-introHome-item">
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item">
                   <div class="fg-introHome-itemPic coverBg" style="background:url('https://hd.unsplash.com/photo-1450101499163-c8848c66ca85')"></div>
                   <h2 class="fg-introHome-itemTitle">Soporte Jurídico</h2>
                   <p class="fg-introHome-itemText">Cuente con toda nuestra experiencia jurídica en la gestión de contratos y cobros administrativos y/o judiciales. </p>
@@ -359,7 +360,7 @@
       <section id="fg-services">
 
          <div class="fg-homesection-intro clearfix">
-            <div class="m-4-6ths parts centerPart text-center">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
                <h2>Servicios Inmobiliarios</h2>
                <div class="fg-homesection-introDesc">
                   <p>Mauris vehicula, mi sed hendrerit pulvinar, orci tortor interdum odio, a porta tellus turpis sed velit. Fusce vehicula lacus venenatis ligula scelerisque, quis consectetur libero suscipit. Morbi fermentum gravida viverra.</p>
@@ -423,7 +424,7 @@
          </div>
 
          <div class="fg-services-contact clearfix">
-            <div class="m-4-6ths parts centerPart text-center">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
                <h2>¿Tiene un Inmueble?</h2>
                <div class="fg-services-contactDesc">
                   <p>Si desea que Fonnegra Gerlein comercialice su inmueble contáctenos para poder asesorarlo.</p>
@@ -437,13 +438,74 @@
       </section>
       <!-- /SERVICES -->
 
-      <!-- CONTACT US --><!-- /CONTACT US -->
+      <!-- CONTACT US -->
+      <section id="fg-homecontact">
+
+         <div class="fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Contáctenos</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Déjenos su mensaje.<br>uno de nuestros asesores se pondrá en contacto con usted lo más pronto posible.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <form action="">
+               <div class="clearfix fg-homecontact-form">
+                  <div class="m-1-half s-1 xs-1 parts">
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-name">Nombre completo</label>
+                        <input id="fg-homecontact-input-name" type="text">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-mail">Correo electrónico</label>
+                        <input id="fg-homecontact-input-mail" type="email">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-phone">Teléfono</label>
+                        <input id="fg-homecontact-input-phone" type="text">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-subject">Asunto</label>
+                        <div class="fg-select">
+                           <select id="fg-homecontact-input-subject">
+                              <option value="A">Inmobiliaria</option>
+                              <option value="B">Avalúos</option>
+                              <option value="C">Tierras</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-1-half s-1 xs-1 parts">
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-message">Mensaje</label>
+                        <textarea id="fg-homecontact-input-message" rows="7"></textarea>
+                     </div>
+                     <div class="fg-homecontact-agree">
+                        <input type="checkbox" id="fg-homecontact-input-agree">
+                        <label for="fg-homecontact-input-agree">Acepto que he leído la <a href="#">política de privacidad</a>.</label>
+                     </div>
+                     <div class="fg-homecontact-captcha">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                     </div>
+                     <div class="fg-homecontact-cta">
+                        <button class="button" type="submit">Contactarme</button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+
+      </section>
+      <!-- /CONTACT US -->
 
       <!-- BLOG -->
       <section id="fg-homeblog">
 
          <div class="fg-homesection-intro clearfix">
-            <div class="m-4-6ths parts centerPart text-center">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
                <h2>Blog</h2>
                <div class="fg-homesection-introDesc">
                   <p>Mauris vehicula, mi sed hendrerit pulvinar, orci tortor interdum odio, a porta tellus turpis sed velit. Fusce vehicula lacus venenatis ligula scelerisque, quis consectetur libero suscipit. Morbi fermentum gravida viverra.</p>
