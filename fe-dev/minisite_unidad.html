@@ -1,0 +1,173 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+      <meta name="description" content="">
+      <title>Fonnegra Gerlein</title>
+      
+      <!-- MODERNIZR -->
+         <script src="includes/js-modernizr.js"></script>
+
+      <!-- CSS -->
+
+         <!--build:css includes/css-plugins.css -->
+            <link rel="stylesheet" href="includes/css-bootstrap.css">
+            <link rel="stylesheet" href="includes/css-jumagrid-v07.css">
+            <link rel="stylesheet" href="includes/css-jqueryui.css">
+            <link rel="stylesheet" href="includes/css-fancybox.css">
+            <link rel="stylesheet" href="includes/css-slick.css">
+            <link rel="stylesheet" href="includes/css-datepicker.css">
+         <!-- endbuild -->
+
+         <!-- Fonts -->
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+         <!-- Main Styles -->
+            <link rel="stylesheet" href="includes/css-main.css">
+
+      <!-- JAVASCRIPT -->
+         <script src="includes/js-jquery.js"></script>
+
+         <!--build:js includes/js-plugins.js -->
+            <script src="includes/js-bootstrap.js"></script>
+            <script src="includes/js-jqueryui.js"></script>
+            <script src="includes/js-datepicker-timeAddon.js"></script>
+            <script src="includes/js-slick.min.js"></script>
+            <script src="includes/js-fancybox.js"></script>
+            <script src="includes/js-isotope.js"></script>
+         <!-- endbuild -->
+
+         <!-- Main Scripts -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+            <script src="includes/js-main.js"></script>
+
+   </head>
+
+   <body>
+      <!--[if lt IE 8]>
+         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- DWELLING OPTIONS BANNER -->
+      <section id="dwellingops-banner">
+         <div class="makeBg" style="background-image: url(media/dwelling01.jpg);">
+            <h2>Vivienda</h2>
+            <div class="dwellingops-filtersBox">
+               <h3>¿Busca opciones de vivienda?</h3>
+               <form action="">
+                  <div class="dwellingops-filtersCont">
+                     <div class="dwellingops-basicFilters">
+                        <div class="dwellingops-input fg-select">
+                           <select>
+                              <option value="A">Comprar</option>
+                              <option value="B">Vender</option>
+                              <option value="C">Arrendar</option>
+                           </select>
+                        </div>
+                        <div class="dwellingops-input fg-select">
+                           <select>
+                              <option value="" selected disabled>Tipo de inmueble</option>
+                              <option value="A">Vivienda</option>
+                              <option value="B">Comercial</option>
+                              <option value="C">Industrial</option>
+                              <option value="D">Tierras</option>
+                           </select>
+                        </div>
+                        <div class="dwellingops-input fg-select">
+                           <select>
+                              <option value="" selected disabled>¿Dónde?</option>
+                              <option value="A">Bogotá</option>
+                              <option value="B">Cali</option>
+                              <option value="C">Cartagena</option>
+                           </select>
+                        </div>
+                        <div class="dwellingops-input fg-select">
+                           <select>
+                              <option value="" selected disabled>Zona</option>
+                              <option value="A">Norte</option>
+                              <option value="B">Centro</option>
+                              <option value="C">Occidente</option>
+                           </select>
+                        </div>
+                        <div class="dwellingops-input">
+                           <input type="text" placeholder="Código inmueble">
+                        </div>
+                        <div class="dwellingops-searchbt">
+                           <button type="submit">
+                              <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="dwellingops-moreFilters">
+                        <p>Más opciones de búsqueda</p>
+                        <div class="dwellingops-field">
+                           <label>Habitaciones</label>
+                           <div class="dwellingops-numberbox">
+                              <span class="fa fa-minus"></span>
+                              <input type="text" value="0" id="">
+                              <div class="fa fa-plus"></div>
+                           </div>
+                        </div>
+                        <div class="dwellingops-field">
+                           <label>Baños</label>
+                           <div class="dwellingops-numberbox">
+                              <span class="fa fa-minus"></span>
+                              <input type="text" value="0">
+                              <div class="fa fa-plus"></div>
+                           </div>
+                        </div>
+                        <div class="dwellingops-field dwellingops-areaSlider">
+                           <label>Área <span class="dwellingops-sliderMin"></span>-<span class="dwellingops-sliderMax"></span> m<sup>2</sup></label>
+                           <div class="dwellingops-slider"></div>
+                        </div>
+                        <div class="dwellingops-field dwellingops-priceSlider">
+                           <label>Precio $<span class="dwellingops-sliderMin"></span>-$<span class="dwellingops-sliderMax"></span></label>
+                           <div class="dwellingops-slider"></div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- /DWELLING OPTIONS BANNER -->
+
+      <!-- FEATURED DWELLING -->
+      <section id="fg-featured-dwelling">
+
+         <div class="fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Opciones de vivienda destacadas</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Paragraph ras dignissim lacinia porttitor. Nunc quis diam quis libero elementum tincidunt. Ut sed diam consectetur, porta sapien at, euismod ipsum. Cras et enim a nisi dapibus suscipit. Sed venenatis metus in leo ullamcorper posuere. Nunc molestie arcu risus. Nullam sit amet consectetur diam. Integer et venenatis tortor. Maecenas dui massa, rhoncus id mauris at, pretium pulvinar erat. Quisque suscipit lacinia ante in aliquet.</p>
+               </div>
+               <div class="fg-sharelinks">
+                  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57d1f07298a78e4a"></script>
+                  <div class="addthis_inline_share_toolbox"></div>
+               </div>
+               <div class="fg-featured-dwelling-buttons">
+                  <a href="#" class="button active">Propiedades en venta</a>
+                  <a href="#" class="button">Propiedades en arriendo</a>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <!-- /FEATURED DWELLING -->
+
+      <!-- Maps 
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="includes/js_infobox.js"></script>
+      <script src="includes/js_maps.js"></script>  
+        -->
+    </body>
+</html>
