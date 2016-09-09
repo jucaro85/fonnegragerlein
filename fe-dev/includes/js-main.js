@@ -12,9 +12,9 @@ function EstatesSlider(){
 
 function formatNumber(n){ return n.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1.'); }
 
-function dwellingOpsSlider(sclass, minv, maxv, startd, endd, stepd) {
+function serviceLandOpsSlider(sclass, minv, maxv, startd, endd, stepd) {
 	$(sclass).each(function(){
-		var $slider = $('.dwellingops-slider', this);
+		var $slider = $('.serviceLandOps-slider', this);
 		$slider.slider({
 			range: true,
 			min: minv,
@@ -22,12 +22,26 @@ function dwellingOpsSlider(sclass, minv, maxv, startd, endd, stepd) {
 			values: [startd,endd],
 			step: stepd,
 			slide: function(e,ui) {
-				$(sclass).find('.dwellingops-sliderMin').text( formatNumber(ui.values[0]) );
-				$(sclass).find('.dwellingops-sliderMax').text( formatNumber(ui.values[1]) );
+				$(sclass).find('.serviceLandOps-sliderMin').text( formatNumber(ui.values[0]) );
+				$(sclass).find('.serviceLandOps-sliderMax').text( formatNumber(ui.values[1]) );
 			}
 		});
-		$(sclass).find('.dwellingops-sliderMin').text( formatNumber($slider.slider('values', 0)) );
-		$(sclass).find('.dwellingops-sliderMax').text( formatNumber($slider.slider('values', 1)) );
+		$(sclass).find('.serviceLandOps-sliderMin').text( formatNumber($slider.slider('values', 0)) );
+		$(sclass).find('.serviceLandOps-sliderMax').text( formatNumber($slider.slider('values', 1)) );
+	});
+}
+
+function initNumberBox(){
+	$('.serviceLandOps-numberbox').each(function(){
+		var $numberbox = $(this), val = Number($('input', $numberbox).val());
+		$('.fa-plus', $numberbox).click(function(){
+			val++;
+			$('input', $numberbox).val(val);
+		});
+		$('.fa-minus', $numberbox).click(function(){
+			if(val > 0){ val--; }
+			$('input', $numberbox).val(val);
+		});
 	});
 }
 
@@ -45,7 +59,9 @@ $(document).ready(function(){
   EstatesSlider();
 
   // Selector, MinValue, MaxValue, MinDefault, MaxDefault, slideJump
-  dwellingOpsSlider('.dwellingops-areaSlider', 0, 600, 0, 300, 50);
-  dwellingOpsSlider('.dwellingops-priceSlider', 0, 4000000000, 0, 2000000000, 100000000);
+  serviceLandOpsSlider('.serviceLandOps-areaSlider', 0, 600, 0, 300, 50);
+  serviceLandOpsSlider('.serviceLandOps-priceSlider', 0, 4000000000, 0, 2000000000, 100000000);
+
+  initNumberBox();
 
 });

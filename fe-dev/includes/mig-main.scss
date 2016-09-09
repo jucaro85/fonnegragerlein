@@ -78,6 +78,155 @@
 }
 
 
+/* SERVICE LANDING */
+#serviceLandOps-banner{
+	display: block; margin: 0;
+	.makeBg{
+		display: block; width: 100%; height: auto; padding: 40px 0;
+		h2{ display: block; margin: 40px 0; font-size: 34px; font: 700px; text-align: center; text-transform: uppercase; color: #fff; }
+	}
+}
+.serviceLandOps-filtersBox{
+	padding: 0 30px;
+	h3{
+		display: block; width: 100%; height: auto; margin: 0; padding: 0.9em 1.25em; font-size: 16px; font-weight: 600; line-height: 1.1; text-transform: uppercase; background: #26f044; color: #111; position: relative;
+		&::after{ content: " "; display: block; border: solid 7px transparent; border-top-color: #26f044; position: absolute; top: 100%; left: 100px; z-index: 2; }
+	}
+}
+.serviceLandOps-filtersCont{ display: block; padding: 30px 20px; background: rgba(#fff, 0.8); }
+.serviceLandOps-basicFilters{ display: table; width: 100%; }
+.serviceLandOps-input{
+	display: table-cell; vertical-align: middle; width: 21%; margin: 0; border-right: 1px solid transparent;
+	&.serviceLandOps-inputCode{
+		width: 15%;
+		input[type=text]{ display: block; width: 100%; height: 40px; margin: 0; padding: 0 5px; border: 0; line-height: 40px; }
+	}
+}
+.serviceLandOps-searchbt{
+	display: table-cell; vertical-align: middle;
+	button{ width: 40px; height: 40px; margin: 0; padding: 0; border: 0; font-size: 18px; line-height: 40px; text-align: center; background: $green; color: #fff; }
+}
+.serviceLandOps-moreFilters{
+	display: table; width: 100%; margin: 0; border-collapse: collapse;
+	p{ display: table-caption; margin: 10px 0; font-size: 14px; font-weight: 400; color: $grey; }
+}
+.serviceLandOps-field{
+	display: table-cell; vertical-align: middle; width: 20%; margin: 0; padding: 20px; border-right: 1px solid transparent; text-align: center; background: #fff; position: relative;
+	label{ display: inline-block; vertical-align: middle; margin: 0; margin-right: 5px; font-size: 14px; font-weight: 400; color: $grey; }
+	.serviceLandOps-numberbox-wrap{ display: inline-block; vertical-align: middle; }
+	&.serviceLandOps-areaSlider,
+	&.serviceLandOps-priceSlider{
+		width: 25%; text-align: left;
+		label{ display: block; margin: 0; margin-bottom: 5px; }
+	}
+}
+.serviceLandOps-numberbox{
+	display: block; width: 100%; font-size: 0;
+	input[type=text]{ display: inline-block; vertical-align: middle; width: 60px; height: 28px; border: 1px solid #ccc; font-size: 13px; text-align: center; background: #fff; }
+	.fa{
+		display: inline-block; vertical-align: middle; width: 28px; height: 28px; border: 2px solid $green; font-size: 13px; line-height: 28px; text-align: center; cursor: pointer;
+		&:hover{ background: $green; }
+	}
+}
+.serviceLandOps-slider{
+	height: 20px; border-radius: 15px;
+	&.ui-widget.ui-widget-content{ border: 1px solid #ccc; }
+	&.ui-slider .ui-slider-range{ border: 2px solid $green; border-radius: 15px; background: lighten($green, 30%); }
+	&.ui-slider .ui-slider-handle{
+		width: 15px; height: 15px; border-radius: 50%; background: $black; cursor: pointer; top: 1px; margin: 0 3px;
+		& + .ui-slider-handle{ margin-left: -18px; }
+	}
+}
+
+#fg-featured-landservices{
+	padding: 40px 0;
+	.fg-estatesGrid-tabButtons{ margin-top: 30px; }
+}
+.fg-sharelinks{
+	display: block; padding: 20px 0; text-align: center;
+	.addthis_inline_share_toolbox{ display: inline-block; vertical-align: middle; }
+	.at-resp-share-element .at-share-btn{
+		margin: 0 5px; border: 1px solid $black;
+		&:hover,
+		&:focus{ transform: none; }
+		&:hover{ background: $black !important; }
+		.at-icon{ fill: $black !important; }
+		&:hover .at-icon{ fill: $green !important; }
+	}
+}
+
+#service-offer{ padding: 30px 0; background: #f8f8f8; }
+.service-offer-grid{ margin-top: 20px; }
+.service-offer-item{
+	padding: 20px; color: $black;
+	figure{ display: block; margin: 0; margin-bottom: 40px; }
+	img{ display: inline-block; vertical-align: middle; width: auto; max-width: 100%; }
+	h3{ display: block; margin: 0; margin-bottom: 10px; font-size: 14px; font-weight: 400; text-transform: uppercase; }
+	.service-offer-itemDesc{ font-size: 13px; font-weight: 400; line-height: 1.5; color: $grey; }
+}
+
+#fg-advertise-estate{
+	padding: 40px 0;
+	.fg-homesection-intro h2{ color: $black; }
+}
+.fg-advertise-steps{ @include resetUL(); counter-reset: item; padding: 40px 0; }
+.fg-advertise-step{
+	color: $black;
+	figure{
+		position: relative; margin-bottom: 10px;
+		&::after{ content: counter(item); display: block; width: 40px; height: 40px; margin-left: -20px; border: 2px solid $blue; border-radius: 50%; font-size: 24px; font-weight: 700; line-height: 38px; text-align: center; background: #fff; color: $black; position: absolute; bottom: -5px; left: 50%; z-index: 2; counter-increment: item; }
+		img{ display: block; width: 100%; height: auto; }
+	}
+	h4{ display: block; margin: 0; margin-bottom: 5px; font-size: 18px; font-weight: 700; text-transform: uppercase; }
+}
+.fg-advertise-step:nth-child(even) figure::after{ background: $blue; color: #fff; }
+.fg-advertise-stepText{ padding: 40px; }
+.fg-advertise-stepDesc{ font-size: 14px; font-weight: 400; line-height: 1.5; color: $grey; }
+
+.fg-advertise-forms{
+	display: flex; padding: 20px 40px;
+	.parts{ display: flex; flex: auto; padding: 5px; }
+}
+.fg-advertise-form{
+	flex: 1; border: 1px solid #ccc;
+	h4{ display: block; margin: 0; padding: 20px; font-size: 20px; font-weight: 400; line-height: 1.1; text-transform: uppercase; color: $black; }
+}
+.fg-advertise-forms .parts:nth-child(odd){
+	h4{ background: lighten($blue, 30%); }
+}
+.fg-advertise-forms .parts:nth-child(even){
+	h4{ background: lighten($green, 25%); }
+}
+.fg-advertise-formCont{
+	padding: 20px 80px;
+	p{ display: block; margin: 10px 0; font-size: 14px; font-weight: 400; color: $grey; }
+}
+.fg-advertise-formInput{
+	display: block; margin: 10px 0;
+	label{ display: block; margin: 0; margin-bottom: 5px; font-size: 14px; font-weight: 400; color: $grey; cursor: pointer; }
+	input[type=text],
+	input[type=email]{ display: block; width: 100%; height: 40px; padding: 0 5px; border: 1px solid #ccc; }
+}
+.fg-advertise-captcha{
+	display: block; margin: 20px 0; text-align: center;
+	.g-recaptcha{ display: inline-block; vertical-align: middle; }
+}
+.fg-advertise-formAgree{
+	display: table; margin: 20px 0;
+	input[type=checkbox],
+	label{ display: table-cell; vertical-align: top; }
+	input[type=checkbox]{ width: 15px; height: 15px; margin: 0; margin-right: 5px; }
+	label{ font-size: 13px; font-weight: 400; line-height: 1.4; color: $grey; }
+}
+.fg-advertise-formCta{
+	margin-bottom: 10px; text-align: center;
+	.button{ display: block; width: 100%; }
+}
+
+#fg-relatedposts{ padding: 20px 0; background: #f8f8f8; }
+
+
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -112,8 +261,8 @@
 
 	.fg-homesection-intro{ padding: 20px; }
 	.fg-estatesItem{ padding: 10px; }
-	.fg-featuredEstates-buttons .button{ display: block; width: 100%; }
-	.fg-featuredEstates-cta .button{ width: auto; }
+	.fg-estatesGrid-tabButtons .button{ display: block; width: 100%; }
+	.fg-estatesGrid-loadMore .button{ min-width: initial; }
 
 	#fg-introductionHome{ padding-bottom: 40px; }
 	.fg-introHome-cont{ padding: 40px 20px 100px; }

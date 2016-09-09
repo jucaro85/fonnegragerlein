@@ -62,7 +62,7 @@
 
 /* ESTATES GRID */
 	#fg-featuredEstates{ display: block; padding: 20px 0; background: #fff; }
-	.fg-featuredEstates-buttons{
+	.fg-estatesGrid-tabButtons{
 		font-size: 0;
 		.button{ font-size: 14px; font-weight: 400; text-transform: none; }
 	}
@@ -100,9 +100,9 @@
 		li{ display: inline-block; vertical-align: middle; font-size: 14px; font-weight: 400; line-height: 1; color: $black; }
 		li + li::before{ content: "-"; display: inline-block; vertical-align: baseline; margin: 0 3px; }
 	}
-	.fg-featuredEstates-cta{
+	.fg-estatesGrid-loadMore{
 		padding: 20px 0;
-		.button{ width: 280px; font-size: 16px; font-weight: 700; text-transform: uppercase; }
+		.button{ width: auto; min-width: 280px; font-size: 16px; font-weight: 700; text-transform: uppercase; }
 	}
 
 @import "mig-main.scss";
