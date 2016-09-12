@@ -227,6 +227,47 @@
 #fg-relatedposts{ padding: 20px 0; background: #f8f8f8; }
 
 
+/* ESTATES LANDING */
+.fg-landEstates-map{
+	display: block; position: relative; width: 100%; height: 400px; margin: 20px 0;
+	#gmap{ display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+	.infoBox{
+		& > img{ top: 0; right: 0; z-index: 2; }
+	}
+	.fg-infobox-art{
+		display: block; width: 215px; height: auto; margin: 0; padding: 5px; background: #fff; color: $grey; box-shadow: 0 0 10px rgba($black, 0.5); position: relative;
+		&::after{ content: " "; display: block; width: 0; height: 0; margin-left: -8px; border: solid 8px transparent; border-top-color: #fff; position: absolute; bottom: -15px; left: 50%; }
+		.makeBg{ display: block; width: 100%; height: 0; margin: 0; padding: 0; padding-top: 65%; }
+		h2{ display: block; margin: 0; margin-top: 10px; font-size: 13px; font-weight: 700; color: $black; }
+		ul{
+			@include resetUL(); font-size: 0;
+			li{
+				display: inline-block; vertical-align: middle; margin: 0; font-size: 12px;
+				&::before{ content: "-"; display: inline-block; vertical-align: baseline; margin: 0 3px; }
+				&:first-child::before{ display: none; }
+			}
+		}
+	}
+}
+
+.fg-estatesGrid-pagination{
+	display: block; margin: 0; padding: 20px 40px;
+	ul{
+		@include resetUL(); width: 100%; height: auto; padding: 30px 0; border-top: 1px solid #dadada; font-size: 0; text-align: center;
+		li{ display: inline-block; vertical-align: middle; font-size: 14px; }
+		a{
+			display: block; width: 26px; height: 26px; border: 1px solid #dadada; font-weight: 400; line-height: 26px; text-align: center; text-decoration: none; color: lighten($black, 25%);
+			&:hover,
+			&.current{ font-weight: 700; text-decoration: none; background: $green; color: $black; }
+		}
+		li.current a{ font-weight: 700; text-decoration: none; background: $green; color: $black; }
+		.fg-estatesGrid-paginationPrev a,
+		.fg-estatesGrid-paginationNext a,
+		.fg-estatesGrid-paginationDots a{ margin: 0 5px; border: 0; }
+	}
+}
+
+
 
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
@@ -341,5 +382,19 @@
 
 	.fg-homeblog-loadmore{ padding: 20px 0; }
 
+	.fg-landEstates-map{ height: 300px; }
+
+	.fg-estatesGrid-pagination{ padding: 20px; }
+
 }
-@media only screen and (max-width: 419px) {}
+@media only screen and (max-width: 419px) {
+
+	.fg-estatesGrid-pagination ul li{
+		display: none;
+		&.fg-estatesGrid-paginationPrev,
+		&.fg-estatesGrid-paginationNext,
+		&.fg-estatesGrid-paginationDots,
+		&.current{ display: inline-block; }
+	}
+
+}

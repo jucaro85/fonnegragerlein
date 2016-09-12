@@ -976,6 +976,123 @@ a:focus {
   padding: 20px 0;
   background: #f8f8f8; }
 
+/* ESTATES LANDING */
+.fg-landEstates-map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 20px 0; }
+  .fg-landEstates-map #gmap {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .fg-landEstates-map .infoBox > img {
+    top: 0;
+    right: 0;
+    z-index: 2; }
+  .fg-landEstates-map .fg-infobox-art {
+    display: block;
+    width: 215px;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    background: #fff;
+    color: #515151;
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
+    position: relative; }
+    .fg-landEstates-map .fg-infobox-art::after {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: -8px;
+      border: solid 8px transparent;
+      border-top-color: #fff;
+      position: absolute;
+      bottom: -15px;
+      left: 50%; }
+    .fg-landEstates-map .fg-infobox-art .makeBg {
+      display: block;
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      padding-top: 65%; }
+    .fg-landEstates-map .fg-infobox-art h2 {
+      display: block;
+      margin: 0;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #4a4a4a; }
+    .fg-landEstates-map .fg-infobox-art ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0; }
+      .fg-landEstates-map .fg-infobox-art ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        font-size: 12px; }
+        .fg-landEstates-map .fg-infobox-art ul li::before {
+          content: "-";
+          display: inline-block;
+          vertical-align: baseline;
+          margin: 0 3px; }
+        .fg-landEstates-map .fg-infobox-art ul li:first-child::before {
+          display: none; }
+
+.fg-estatesGrid-pagination {
+  display: block;
+  margin: 0;
+  padding: 20px 40px; }
+  .fg-estatesGrid-pagination ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    border-top: 1px solid #dadada;
+    font-size: 0;
+    text-align: center; }
+    .fg-estatesGrid-pagination ul li {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px; }
+    .fg-estatesGrid-pagination ul a {
+      display: block;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #dadada;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center;
+      text-decoration: none;
+      color: #8a8a8a; }
+      .fg-estatesGrid-pagination ul a:hover, .fg-estatesGrid-pagination ul a.current {
+        font-weight: 700;
+        text-decoration: none;
+        background: #26f044;
+        color: #4a4a4a; }
+    .fg-estatesGrid-pagination ul li.current a {
+      font-weight: 700;
+      text-decoration: none;
+      background: #26f044;
+      color: #4a4a4a; }
+    .fg-estatesGrid-pagination ul .fg-estatesGrid-paginationPrev a,
+    .fg-estatesGrid-pagination ul .fg-estatesGrid-paginationNext a,
+    .fg-estatesGrid-pagination ul .fg-estatesGrid-paginationDots a {
+      margin: 0 5px;
+      border: 0; }
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -1122,4 +1239,14 @@ a:focus {
   .fg-advertise-captcha {
     overflow: hidden; }
   .fg-homeblog-loadmore {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .fg-landEstates-map {
+    height: 300px; }
+  .fg-estatesGrid-pagination {
+    padding: 20px; } }
+
+@media only screen and (max-width: 419px) {
+  .fg-estatesGrid-pagination ul li {
+    display: none; }
+    .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationPrev, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationNext, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationDots, .fg-estatesGrid-pagination ul li.current {
+      display: inline-block; } }
