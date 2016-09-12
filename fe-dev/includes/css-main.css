@@ -635,15 +635,18 @@ a:focus {
   background: rgba(255, 255, 255, 0.8); }
 
 .serviceLandOps-basicFilters {
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%; }
 
 .serviceLandOps-input {
-  display: table-cell;
-  vertical-align: middle;
-  width: 21%;
+  font-size: 14px;
+  display: block;
+  flex: auto;
+  width: 20%;
   margin: 0;
-  border-right: 1px solid transparent; }
+  padding: 0 1px; }
   .serviceLandOps-input.serviceLandOps-inputCode {
     width: 15%; }
     .serviceLandOps-input.serviceLandOps-inputCode input[type=text] {
@@ -656,7 +659,8 @@ a:focus {
       line-height: 40px; }
 
 .serviceLandOps-searchbt {
-  display: table-cell;
+  display: block;
+  flex: auto;
   vertical-align: middle; }
   .serviceLandOps-searchbt button {
     width: 40px;
@@ -671,24 +675,27 @@ a:focus {
     color: #fff; }
 
 .serviceLandOps-moreFilters {
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   border-collapse: collapse; }
   .serviceLandOps-moreFilters p {
-    display: table-caption;
+    display: block;
+    flex: auto;
+    width: 100%;
     margin: 10px 0;
     font-size: 14px;
     font-weight: 400;
     color: #515151; }
 
 .serviceLandOps-field {
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
+  flex: auto;
   width: 20%;
   margin: 0;
+  margin-right: 1px;
   padding: 20px;
-  border-right: 1px solid transparent;
   text-align: center;
   background: #fff;
   position: relative; }
@@ -877,10 +884,12 @@ a:focus {
 
 .fg-advertise-forms {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px 40px; }
   .fg-advertise-forms .parts {
     display: flex;
     flex: auto;
+    float: none;
     padding: 5px; }
 
 .fg-advertise-form {
@@ -970,6 +979,15 @@ a:focus {
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  .serviceLandOps-field label {
+    display: block;
+    margin: 0; }
+  .service-offer-item .service-offer-itemDesc {
+    font-size: 12px; }
+  .fg-advertise-formCont {
+    padding: 20px 40px; } }
+
 @media only screen and (max-width: 959px) {
   .fg-estatesGrid {
     padding: 10px; }
@@ -984,7 +1002,24 @@ a:focus {
   .fg-homeblog-artlist {
     padding: 0 10px; }
   .fg-homeblog-item {
-    padding: 15px; } }
+    padding: 15px; }
+  .serviceLandOps-basicFilters {
+    flex-wrap: wrap; }
+  .serviceLandOps-input {
+    width: 50%;
+    margin: 5px 0; }
+    .serviceLandOps-input.serviceLandOps-inputCode {
+      width: calc(100% - 40px); }
+  .serviceLandOps-field {
+    width: 49%;
+    margin: 5px 0;
+    margin-right: 1px; }
+    .serviceLandOps-field.serviceLandOps-areaSlider, .serviceLandOps-field.serviceLandOps-priceSlider {
+      width: 49%; }
+  .fg-advertise-stepText {
+    padding: 20px; }
+  .fg-advertise-stepDesc {
+    font-size: 13px; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -1043,4 +1078,48 @@ a:focus {
   .fg-homeblog-item {
     padding: 10px; }
   .fg-homeblog-loadmore .button {
-    width: auto; } }
+    width: auto; }
+  #serviceLandOps-banner .makeBg {
+    padding: 20px 0; }
+    #serviceLandOps-banner .makeBg h2 {
+      margin: 20px 0;
+      font-size: 28px; }
+  .serviceLandOps-filtersBox {
+    padding: 0 20px; }
+  .serviceLandOps-filtersCont {
+    padding: 20px; }
+  .serviceLandOps-input {
+    width: 100%;
+    padding: 0; }
+  .serviceLandOps-field {
+    width: 100%;
+    margin-right: 0; }
+    .serviceLandOps-field.serviceLandOps-areaSlider, .serviceLandOps-field.serviceLandOps-priceSlider {
+      width: 100%; }
+  #fg-featured-landservices {
+    padding: 20px 0; }
+  #service-offer {
+    padding: 20px 0; }
+  .fg-homesection-intro h2 {
+    margin-bottom: 20px; }
+  .service-offer-grid {
+    margin-top: 0; }
+  .service-offer-item {
+    padding: 20px 0; }
+    .service-offer-item figure {
+      margin-bottom: 20px; }
+  #fg-advertise-estate {
+    padding: 20px 0; }
+  .fg-advertise-steps {
+    padding: 20px 0; }
+  .fg-advertise-forms {
+    padding: 0 20px; }
+  .fg-advertise-form {
+    margin-bottom: 10px;
+    overflow: hidden; }
+  .fg-advertise-formCont {
+    padding: 20px; }
+  .fg-advertise-captcha {
+    overflow: hidden; }
+  .fg-homeblog-loadmore {
+    padding: 20px 0; } }
