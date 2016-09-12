@@ -3,7 +3,7 @@ google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
 	var markerList = [];
-	$('.fg-landEstates-map .mapMarker').each(function(){
+	$('.fg-mapMarker').each(function(){
 		var ilat = Number($(this).data('lat'));
 		var ilng = Number($(this).data('lng'));
 		var myLatLng = new google.maps.LatLng(ilat, ilng);

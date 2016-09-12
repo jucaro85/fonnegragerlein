@@ -580,63 +580,65 @@
     position: absolute;
     top: 0;
     left: 0; }
-  .fg-landEstates-map .infoBox > img {
-    top: 0;
-    right: 0;
-    z-index: 2; }
-  .fg-landEstates-map .fg-infobox-art {
+
+#gmap .infoBox > img {
+  top: 0;
+  right: 0;
+  z-index: 2; }
+
+#gmap .fg-infobox-art {
+  display: block;
+  width: 215px;
+  height: auto;
+  margin: 0;
+  padding: 5px;
+  background: #fff;
+  color: #515151;
+  box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
+  position: relative; }
+  #gmap .fg-infobox-art::after {
+    content: " ";
     display: block;
-    width: 215px;
-    height: auto;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    border: solid 8px transparent;
+    border-top-color: #fff;
+    position: absolute;
+    bottom: -15px;
+    left: 50%; }
+  #gmap .fg-infobox-art .makeBg {
+    display: block;
+    width: 100%;
+    height: 0;
     margin: 0;
-    padding: 5px;
-    background: #fff;
-    color: #515151;
-    box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
-    position: relative; }
-    .fg-landEstates-map .fg-infobox-art::after {
-      content: " ";
-      display: block;
-      width: 0;
-      height: 0;
-      margin-left: -8px;
-      border: solid 8px transparent;
-      border-top-color: #fff;
-      position: absolute;
-      bottom: -15px;
-      left: 50%; }
-    .fg-landEstates-map .fg-infobox-art .makeBg {
-      display: block;
-      width: 100%;
-      height: 0;
+    padding: 0;
+    padding-top: 65%; }
+  #gmap .fg-infobox-art h2 {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4a4a4a; }
+  #gmap .fg-infobox-art ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0; }
+    #gmap .fg-infobox-art ul li {
+      display: inline-block;
+      vertical-align: middle;
       margin: 0;
-      padding: 0;
-      padding-top: 65%; }
-    .fg-landEstates-map .fg-infobox-art h2 {
-      display: block;
-      margin: 0;
-      margin-top: 10px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #4a4a4a; }
-    .fg-landEstates-map .fg-infobox-art ul {
-      display: block;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0; }
-      .fg-landEstates-map .fg-infobox-art ul li {
+      font-size: 12px; }
+      #gmap .fg-infobox-art ul li::before {
+        content: "-";
         display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        font-size: 12px; }
-        .fg-landEstates-map .fg-infobox-art ul li::before {
-          content: "-";
-          display: inline-block;
-          vertical-align: baseline;
-          margin: 0 3px; }
-        .fg-landEstates-map .fg-infobox-art ul li:first-child::before {
-          display: none; }
+        vertical-align: baseline;
+        margin: 0 3px; }
+      #gmap .fg-infobox-art ul li:first-child::before {
+        display: none; }
 
 .fg-estatesGrid-pagination {
   display: block;
@@ -683,6 +685,273 @@
       margin: 0 5px;
       border: 0; }
 
+/* ESTATES LANDING */
+.fg-estateDetail-sliderList {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .fg-estateDetail-sliderList li {
+    height: auto; }
+  .fg-estateDetail-sliderList .makeBg {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 40%; }
+  .fg-estateDetail-sliderList .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer; }
+  .fg-estateDetail-sliderList .slick-prev {
+    left: 15px; }
+  .fg-estateDetail-sliderList .slick-next {
+    right: 15px; }
+  .fg-estateDetail-sliderList .slick-dots {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2; }
+    .fg-estateDetail-sliderList .slick-dots li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 3px; }
+    .fg-estateDetail-sliderList .slick-dots button {
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #26f044;
+      border-radius: 50%;
+      font-size: 0;
+      background: none; }
+    .fg-estateDetail-sliderList .slick-dots .slick-active button {
+      background: #26f044; }
+
+.fg-estateDetail-asideCont {
+  padding: 30px;
+  background: #f8f8f8;
+  color: #515151; }
+  .fg-estateDetail-asideCont h3 {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a4a4a; }
+  .fg-estateDetail-asideCont p {
+    display: block;
+    margin: 20px 0;
+    font-size: 13px; }
+
+.fg-estateDetail-input {
+  display: block;
+  margin: 20px 0; }
+  .fg-estateDetail-input label {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400; }
+  .fg-estateDetail-input input[type=text],
+  .fg-estateDetail-input input[type=email] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #ccc; }
+
+.fg-estateDetail-agree {
+  display: table;
+  width: 100%;
+  height: auto; }
+  .fg-estateDetail-agree input[type=checkbox],
+  .fg-estateDetail-agree label {
+    display: table-cell;
+    vertical-align: top; }
+  .fg-estateDetail-agree input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; }
+  .fg-estateDetail-agree label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-estateDetail-cta {
+  display: block;
+  margin-top: 20px; }
+  .fg-estateDetail-cta .button {
+    display: block;
+    width: 100%; }
+
+.fg-estateDetail-assessorData {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 30px;
+  background: #d6fcdc;
+  color: #515151; }
+  .fg-estateDetail-assessorData li {
+    display: block;
+    padding: 2px 0; }
+  .fg-estateDetail-assessorData a {
+    color: #515151;
+    text-decoration: underline; }
+    .fg-estateDetail-assessorData a:hover {
+      text-decoration: none; }
+
+.fg-estateDetail-contCol {
+  padding: 20px 40px; }
+
+.fg-estateDetail-headerCont {
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #919191; }
+  .fg-estateDetail-headerCont .fg-sharelinks {
+    padding: 0;
+    float: left; }
+  .fg-estateDetail-headerCont .fg-estateDetail-addToFav {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #919191;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    color: #4a4a4a;
+    float: right; }
+    .fg-estateDetail-headerCont .fg-estateDetail-addToFav:hover, .fg-estateDetail-headerCont .fg-estateDetail-addToFav.act {
+      text-decoration: none;
+      background: #26f044;
+      border-color: #26f044;
+      color: #fff; }
+
+.fg-estateDetail-cont {
+  display: block;
+  margin-top: 20px;
+  color: #515151; }
+
+.fg-estateDetail-estateTitle {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #4a4a4a; }
+
+.fg-estateDetail-estateId {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+.fg-estateDetail-estatePrice {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a4a4a; }
+
+.fg-estateDetail-estateArea {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+.fg-estateDetail-estateDesc {
+  font-size: 16px; }
+
+.fg-estateDetail-estateFeatures {
+  padding: 20px 0; }
+  .fg-estateDetail-estateFeatures h3 {
+    display: block;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #919191;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a; }
+  .fg-estateDetail-estateFeatures ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #515151;
+    columns: 2;
+    column-gap: 40px; }
+  .fg-estateDetail-estateFeatures li {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.1;
+    position: relative;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+    .fg-estateDetail-estateFeatures li::before {
+      content: " ";
+      display: block;
+      visibility: visible;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dotted #515151;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1; }
+    .fg-estateDetail-estateFeatures li span {
+      display: block;
+      width: auto;
+      background: #fff;
+      position: relative;
+      z-index: 2; }
+      .fg-estateDetail-estateFeatures li span:nth-child(odd) {
+        padding-right: 5px;
+        float: left; }
+      .fg-estateDetail-estateFeatures li span:nth-child(even) {
+        padding-left: 5px;
+        float: right;
+        text-align: right; }
+
+.fg-estateDetail-estateMap {
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin-top: 10px;
+  position: relative; }
+  .fg-estateDetail-estateMap #gmap {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+#fg-estateDetail-related {
+  padding: 20px 0; }
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -726,7 +995,9 @@
   .fg-advertise-stepText {
     padding: 20px; }
   .fg-advertise-stepDesc {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .fg-estateDetail-contCol {
+    padding: 20px 30px; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -833,7 +1104,23 @@
   .fg-landEstates-map {
     height: 300px; }
   .fg-estatesGrid-pagination {
-    padding: 20px; } }
+    padding: 20px; }
+  .fg-estateDetail-sliderList .makeBg {
+    padding-top: 60%; }
+  .fg-estateDetail-sliderList .slick-prev {
+    left: 0; }
+  .fg-estateDetail-sliderList .slick-next {
+    right: 0; }
+  .fg-estateDetail-contCol,
+  .fg-estateDetail-asideCont,
+  .fg-estateDetail-assessorData {
+    padding: 20px; }
+  .fg-estateDetail-estateFeatures ul {
+    columns: 1; }
+    .fg-estateDetail-estateFeatures ul li {
+      font-size: 12px; }
+  .fg-estateDetail-estateMap {
+    height: 300px; } }
 
 @media only screen and (max-width: 419px) {
   .fg-estatesGrid-pagination ul li {

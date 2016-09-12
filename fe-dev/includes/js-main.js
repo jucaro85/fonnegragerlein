@@ -45,6 +45,16 @@ function initNumberBox(){
 	});
 }
 
+function detailSlider(){
+	$('.fg-estateDetail-sliderList').each(function(){
+		$(this).slick({
+			dots: false,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>'
+		});
+	});
+}
+
 $(document).ready(function(){
 
   $("#fg-slickHome").slick({
@@ -63,5 +73,7 @@ $(document).ready(function(){
   serviceLandOpsSlider('.serviceLandOps-priceSlider', 0, 4000000000, 0, 2000000000, 100000000);
 
   initNumberBox();
+
+  detailSlider();
 
 });
