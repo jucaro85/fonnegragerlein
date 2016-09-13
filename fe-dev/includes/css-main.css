@@ -123,6 +123,12 @@ a:focus {
   margin: 10px 0 10px 1px;
   vertical-align: top; }
 
+.fg-formFinder-inputLong {
+  min-width: 180px; }
+
+.fg-formFinder-inputShort {
+  min-width: 120px; }
+
 .fg-formFinder-btn {
   background: #26f044;
   position: relative; }
@@ -209,7 +215,8 @@ a:focus {
 .fg-introHome-itemPic {
   padding-top: 54.6%;
   margin-bottom: 1em;
-  border-top: solid 2px #26f044; }
+  border-top: solid 2px #26f044;
+  background-size: cover; }
 
 .fg-introHome-title {
   font-size: 24px;
