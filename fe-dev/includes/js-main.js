@@ -65,6 +65,27 @@ function exclusiveSlider(){
 	});
 }
 
+function exclusiveCarousel(){
+	$('.fg-exclusiveDetail-carouselList').each(function(){
+		$(this).slick({
+			dots: false,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>',
+			responsive: [
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+}
+
 $(document).ready(function(){
 
   $("#fg-slickHome").slick({
@@ -86,5 +107,6 @@ $(document).ready(function(){
 
   detailSlider();
   exclusiveSlider();
+  exclusiveCarousel();
 
 });
