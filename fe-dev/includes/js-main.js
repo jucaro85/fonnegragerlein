@@ -55,6 +55,16 @@ function detailSlider(){
 	});
 }
 
+function exclusiveSlider(){
+	$('.fg-exclusiveDetail-sliderList').each(function(){
+		$(this).slick({
+			dots: false,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>'
+		});
+	});
+}
+
 $(document).ready(function(){
 
   $("#fg-slickHome").slick({
@@ -75,5 +85,6 @@ $(document).ready(function(){
   initNumberBox();
 
   detailSlider();
+  exclusiveSlider();
 
 });
