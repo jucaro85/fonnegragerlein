@@ -86,6 +86,34 @@ function exclusiveCarousel(){
 	});
 }
 
+function landInvestorsCharts(){
+	var investorsTopCtx = $("#fg-landInvestors-topChart"),
+		investorsTopChart = new Chart(investorsTopCtx, {
+			type: 'line',
+			data: {
+				labels: ['2012','2013','2014','2015','2016'],
+				datasets: [
+					{
+						data: [20,10,17,100,0],
+						backgroundColor: 'rgba(112,1,209,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0
+					}
+				]
+			},
+			options: {
+				scales: {
+					gridLines: {
+						display: false,
+						lineWidth: 2
+					}
+				}
+			}
+		});
+}
+
 $(document).ready(function(){
 
   $("#fg-slickHome").slick({
@@ -108,5 +136,7 @@ $(document).ready(function(){
   detailSlider();
   exclusiveSlider();
   exclusiveCarousel();
+
+  landInvestorsCharts();
 
 });

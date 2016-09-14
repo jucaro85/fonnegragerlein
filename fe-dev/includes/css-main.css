@@ -467,6 +467,22 @@ a:focus {
 #fg-proyectosFases {
   padding: 40px 0; }
 
+.fg-proyectosFases-texto {
+  padding-bottom: 1em; }
+  .fg-proyectosFases-texto h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 0 .5em; }
+  .fg-proyectosFases-texto h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 .5em; }
+  .fg-proyectosFases-texto h3 {
+    font-size: 14px;
+    margin: 0 0 .5em; }
+  .fg-proyectosFases-texto p {
+    margin: 0 0 .5em; }
+
 /* FG Main Styles */
 /* HOME BANNER */
 .fg-formFinder-btn-txt {
@@ -539,8 +555,7 @@ a:focus {
 
 .fg-homecontact-cta .button {
   display: block;
-  width: 100%;
-  background: #26f044; }
+  width: 100%; }
 
 /* HOME SERVICES */
 .fg-services-item {
