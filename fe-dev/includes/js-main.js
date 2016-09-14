@@ -105,10 +105,14 @@ function landInvestorsCharts(){
 			},
 			options: {
 				scales: {
-					gridLines: {
-						display: false,
-						lineWidth: 2
-					}
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+					}],
+					yAxes: [{
+						display: false
+					}]
 				}
 			}
 		});
