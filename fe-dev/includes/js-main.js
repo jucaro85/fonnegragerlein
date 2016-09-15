@@ -86,8 +86,50 @@ function exclusiveCarousel(){
 	});
 }
 
+function studycasesCarousel(){
+	$('.fg-studyCases-carouselList').each(function(){
+		$(this).slick({
+			dots: false,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>',
+			responsive: [
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+}
+
+function projectsToInvestCarousel(){
+	$('.fg-projectsToInvest-carouselList').each(function(){
+		$(this).slick({
+			dots: false,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>',
+			responsive: [
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+}
+
 function landInvestorsCharts(){
-	var investorsTopCtx = $("#fg-landInvestors-topChart"),
+	var investorsTopCtx = $('#fg-landInvestors-topChart'),
 		investorsTopChart = new Chart(investorsTopCtx, {
 			type: 'line',
 			data: {
@@ -95,15 +137,40 @@ function landInvestorsCharts(){
 				datasets: [
 					{
 						data: [20,10,17,100,0],
+						label: 'Bener',
 						backgroundColor: 'rgba(112,1,209,0.4)',
 						borderColor: 'rgba(0,0,0,0)',
 						borderWidth: 0,
 						fill: true,
-						lineTension: 0
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [15,30,80,60,20],
+						label: 'Care',
+						backgroundColor: 'rgba(4,168,222,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [0,75,30,55,7],
+						label: 'Gold',
+						backgroundColor: 'rgba(250,205,130,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0,
+						pointRadius: 0
 					}
 				]
 			},
 			options: {
+				legend: {
+					display: false
+				},
 				scales: {
 					xAxes: [{
 						gridLines: {
@@ -112,6 +179,82 @@ function landInvestorsCharts(){
 					}],
 					yAxes: [{
 						display: false
+					}]
+				}
+			}
+		});
+	$('#fg-landInvestors-topChart').parent().append(investorsTopChart.generateLegend());
+
+	var investorsBepartCtx = $('#fg-landInvestors-bepartChart'),
+		investorsBepartChart = new Chart(investorsBepartCtx, {
+			type: 'horizontalBar',
+			data: {
+				labels: ['Ubicación','Seguridad','Instalaciones'],
+				datasets: [
+					{
+						data: [65,87,43],
+						backgroundColor: [
+							'rgba(250,205,130,0.4)',
+							'rgba(112,1,209,0.4)',
+							'rgba(4,168,222,0.4)'
+						]
+					}
+				]
+			},
+			options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+						display: false,
+						ticks: {
+							min: 0,
+							max: 100
+						}
+					}],
+					yAxes: [{
+						gridLines: {
+							display: false
+						}
+					}]
+				}
+			}
+		});
+
+	var investorsHomeAcqCtx = $('#fg-landInvestors-homeAcqChart'),
+		investorsHomeAcqChart = new Chart(investorsHomeAcqCtx, {
+			type: 'bar',
+			data: {
+				labels: ['Nueva','Usada','Hipoteca','Otros'],
+				datasets: [
+					{
+						data: [50,30,40,80],
+						backgroundColor: [
+							'rgba(250,5,30,0.4)',
+							'rgba(250,205,130,0.4)',
+							'rgba(112,1,209,0.4)',
+							'rgba(4,168,222,0.4)'
+						]
+					}
+				]
+			},
+			options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+					}],
+					yAxes: [{
+						display: false,
+						ticks: {
+							min: 0,
+							max: 100
+						}
 					}]
 				}
 			}
@@ -142,5 +285,7 @@ $(document).ready(function(){
   exclusiveCarousel();
 
   landInvestorsCharts();
+  studycasesCarousel();
+  projectsToInvestCarousel();
 
 });
