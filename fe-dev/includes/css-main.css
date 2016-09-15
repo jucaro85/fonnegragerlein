@@ -51,6 +51,11 @@ a:focus {
   .button.button-white:hover, .button.button-white.active {
     background: #FFF;
     color: #4a4a4a; }
+  .button.button-blue {
+    border-color: #00c69f; }
+  .button.button-blue:hover, .button.button-white.active {
+    color: #FFF;
+    background: #00c69f; }
 
 .fg-homesection-intro {
   padding: 30px 0; }
@@ -213,7 +218,7 @@ a:focus {
   z-index: 2; }
 
 .fg-introHome-itemPic {
-  padding-top: 54.6%;
+  padding-top: 56%;
   margin-bottom: 1em;
   border-top: solid 2px #26f044;
   background-size: cover; }
@@ -467,21 +472,133 @@ a:focus {
 #fg-proyectosFases {
   padding: 40px 0; }
 
-.fg-proyectosFases-texto {
+.fg-proyectosFases-texto, .fg-proyectosFeat-itemText, .texto {
+  font-size: 14px;
   padding-bottom: 1em; }
-  .fg-proyectosFases-texto h1 {
-    font-size: 16px;
+  .fg-proyectosFases-texto h1, .fg-proyectosFeat-itemText h1, .texto h1 {
+    font-size: 18px;
     text-transform: uppercase;
-    margin: 0 0 .5em; }
-  .fg-proyectosFases-texto h2 {
+    margin: 0 0 .75em; }
+  .fg-proyectosFases-texto h2, .fg-proyectosFeat-itemText h2, .texto h2 {
     font-size: 14px;
     text-transform: uppercase;
-    margin: 0 0 .5em; }
-  .fg-proyectosFases-texto h3 {
+    margin: 0 0 .66em; }
+  .fg-proyectosFases-texto h3, .fg-proyectosFeat-itemText h3, .texto h3 {
     font-size: 14px;
     margin: 0 0 .5em; }
-  .fg-proyectosFases-texto p {
-    margin: 0 0 .5em; }
+  .fg-proyectosFases-texto p, .fg-proyectosFeat-itemText p, .texto p {
+    margin: 0 0 .5em;
+    font-family: 'Lato', sans-serif;
+    line-height: 150%; }
+  .fg-proyectosFases-texto ul, .fg-proyectosFeat-itemText ul, .texto ul {
+    margin: 0 0 .5em;
+    padding-left: 1em;
+    font-family: 'Lato', sans-serif; }
+  .fg-proyectosFases-texto * + h1,
+  .fg-proyectosFases-texto * + h2,
+  .fg-proyectosFases-texto * + h3,
+  .fg-proyectosFases-texto * + h4, .fg-proyectosFeat-itemText * + h1,
+  .fg-proyectosFeat-itemText * + h2,
+  .fg-proyectosFeat-itemText * + h3,
+  .fg-proyectosFeat-itemText * + h4, .texto * + h1,
+  .texto * + h2,
+  .texto * + h3,
+  .texto * + h4 {
+    margin-top: 1em; }
+
+.fg-proyectosFases-holder {
+  margin-left: -50px; }
+
+.fg-proyectosFases-item {
+  padding-left: 50px; }
+
+.fg-proyectosFeat-item {
+  background: #f8f8f8;
+  position: relative; }
+
+.fg-proyectosFeat-itemCont {
+  min-height: 350px;
+  padding: 95px 5% 90px; }
+
+.fg-proyectosFeat-item:nth-child(even) .fg-proyectosFeat-itemCont {
+  float: right; }
+
+.fg-proyectosFeat-itemPic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+.fg-proyectosFeat-item:nth-child(odd) .fg-proyectosFeat-itemPic {
+  left: auto;
+  right: 0; }
+
+.fg-services-contact.fg-asesoriaAzul h2 {
+  border: 0;
+  padding: 0;
+  margin: 0 auto .75em;
+  color: #00c69f; }
+
+.fg-asesoriaAzul .fg-services-contactDesc {
+  font-weight: 300;
+  margin-bottom: .5em; }
+
+#fg-homecontact.fg-contactMarine {
+  background: #00c69f;
+  padding: 60px 0; }
+
+.fg-contactMarine-text {
+  color: #FFF;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 300; }
+
+.fg-contactMarine-text a {
+  color: #FFF;
+  text-decoration: underline; }
+
+.texto .fg-triangleLeft {
+  position: relative;
+  font-size: 20px; }
+
+.fg-triangleLeft:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 6px;
+  left: -24px;
+  border: solid 6px transparent;
+  border-left-color: #FFF; }
+
+.fg-contactMarine .fg-homecontact-input label {
+  color: #FFF; }
+
+.fg-contactMarine .fg-homecontact-input,
+.fg-contactMarine .fg-homecontact-input input[type=text],
+.fg-contactMarine .fg-homecontact-input input[type=email],
+.fg-contactMarine .fg-homecontact-input select,
+.fg-contactMarine .fg-homecontact-input textarea {
+  border-color: #0b7; }
+
+.fg-contactMarine .fg-homecontact-agree label {
+  color: #FFF;
+  font-family: 'Lato', sans-serif; }
+  .fg-contactMarine .fg-homecontact-agree label a {
+    color: #FFF; }
+
+.fg-homesection-intro.fg-intro-marine h2 {
+  color: #00c69f;
+  margin-bottom: 1em; }
+
+.fg-homesection-intro.fg-intro-marine {
+  padding-bottom: 0; }
+
+.fg-articles-marine .fg-homeblog-item article {
+  border-top-color: #00c69f; }
+
+.fg-articles-marine .fg-homeblog-itemCategory {
+  color: #00c69f; }
 
 /* FG Main Styles */
 /* HOME BANNER */
@@ -2123,3 +2240,8 @@ a:focus {
     display: none; }
     .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationPrev, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationNext, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationDots, .fg-estatesGrid-pagination ul li.current {
       display: inline-block; } }
+
+/* FG Main Styles */
+/*--------------------------------------------------------------------------------
+	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
+--------------------------------------------------------------------------------*/
