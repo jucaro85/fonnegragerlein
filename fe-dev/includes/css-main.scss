@@ -17,6 +17,9 @@
 		&.button-blue{ border-color:$marine;}
 		&.button-blue:hover,
 		&.button-white.active{ color:#FFF; background:$marine;}
+		&.button-lightblue{ border-color:$blue; }
+		&.button-lightblue:hover,
+		&.button-lightblue.active{ color:#FFF; background:$blue; }
 	}
 	.fg-homesection-intro{
 		padding: 30px 0;
@@ -127,13 +130,6 @@
 		figure{ height:100px; margin: 50px 0; }
 	}
 	#fg-proyectosFases{ padding:40px 0;}
-<<<<<<< HEAD
-	.fg-proyectosFases-texto{ padding-bottom: 1em;
-		h1{font-size: 16px; text-transform: uppercase; margin: 0 0 .5em;}
-		h2{font-size: 14px; text-transform: uppercase; margin: 0 0 .5em;}
-		h3{font-size: 14px; margin: 0 0 .5em;}
-		p{ margin: 0 0 .5em;}
-=======
 	.fg-proyectosFases-texto, .fg-proyectosFeat-itemText, .texto{ font-size:14px; padding-bottom: 1em;
 		h1{font-size: 18px; text-transform: uppercase; margin: 0 0 .75em;}
 		h2{font-size: 14px; text-transform: uppercase; margin: 0 0 .66em;}
@@ -144,7 +140,6 @@
 		* + h2,
 		* + h3,
 		* + h4{ margin-top: 1em;}
->>>>>>> cc1636b5d1c31a917dce58fee87da1cf195d6e93
 	}
 	.fg-proyectosFases-holder{ margin-left:-50px;}
 	.fg-proyectosFases-item{ padding-left:50px;}

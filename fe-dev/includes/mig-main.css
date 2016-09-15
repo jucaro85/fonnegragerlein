@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* FG Main Styles */
 /* HOME BANNER */
 .fg-formFinder-btn-txt {
@@ -684,7 +685,7 @@
       margin: 0 5px;
       border: 0; }
 
-/* ESTATES LANDING */
+/* ESTATES DETAIL */
 .fg-estateDetail-sliderList {
   display: block;
   margin: 0;
@@ -1387,6 +1388,342 @@
   font-weight: 400;
   color: #515151; }
 
+/* LANDING INVESTORS */
+#fg-landInvestors {
+  padding: 40px 0; }
+
+.fg-blue-intro h2 {
+  color: #04a8de; }
+
+.fg-landInvestors-topChart #fg-landInvestors-topChart {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.fg-landInvestors-topChart ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0; }
+  .fg-landInvestors-topChart ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #515151; }
+  .fg-landInvestors-topChart ul span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%; }
+
+.fg-landInvestors-topChart .fg-landInvestors-topChartDesc {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #515151; }
+
+#fg-investors-bePart {
+  padding: 40px; }
+
+.fg-investors-bePartCont {
+  padding: 40px 0;
+  border: dashed #dadada;
+  border-width: 1px 0; }
+  .fg-investors-bePartCont .parts {
+    vertical-align: middle; }
+
+.fg-investors-bePartText {
+  padding-right: 40px;
+  font-weight: 400;
+  color: #515151; }
+  .fg-investors-bePartText h3 {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+  .fg-investors-bePartText .fg-investors-bePartDesc {
+    font-size: 14px; }
+    .fg-investors-bePartText .fg-investors-bePartDesc p {
+      display: block;
+      margin: 0; }
+    .fg-investors-bePartText .fg-investors-bePartDesc p + p {
+      margin-top: 20px; }
+    .fg-investors-bePartText .fg-investors-bePartDesc ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin: 20px 0; }
+      .fg-investors-bePartText .fg-investors-bePartDesc ul li {
+        display: block;
+        margin: 5px 0;
+        padding-left: 30px;
+        position: relative; }
+        .fg-investors-bePartText .fg-investors-bePartDesc ul li::before {
+          content: "•";
+          display: inline-block;
+          vertical-align: baseline;
+          width: 30px;
+          text-align: center;
+          position: absolute;
+          top: 0;
+          left: 0; }
+
+.fg-investors-bePartChart h4 {
+  display: block;
+  margin: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #04a8de; }
+
+.fg-investors-homeAcquirement {
+  display: block;
+  padding: 40px 0;
+  border-bottom: 1px dashed #dadada; }
+  .fg-investors-homeAcquirement .parts {
+    vertical-align: middle; }
+  .fg-investors-homeAcquirement .fg-investors-homeAcquirementImg {
+    vertical-align: bottom; }
+    .fg-investors-homeAcquirement .fg-investors-homeAcquirementImg img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto; }
+  .fg-investors-homeAcquirement .fg-investors-homeAcquirementDesc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+    .fg-investors-homeAcquirement .fg-investors-homeAcquirementDesc h4 {
+      display: block;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #04a8de; }
+
+#fg-ownersRep {
+  padding: 40px; }
+  #fg-ownersRep .parts {
+    vertical-align: middle; }
+
+.fg-ownersRep-formCol h3 {
+  display: block;
+  margin: 0;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #04a8de;
+  color: #fff; }
+
+.fg-ownersRep-form {
+  padding: 20px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #f8f8f8;
+  color: #515151; }
+  .fg-ownersRep-form p {
+    display: block;
+    margin: 20px 0; }
+
+.fg-ownersRep-input {
+  display: block;
+  margin: 20px 0; }
+  .fg-ownersRep-input label {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400; }
+  .fg-ownersRep-input input[type=text],
+  .fg-ownersRep-input input[type=email] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #ccc; }
+
+.fg-ownersRep-agree {
+  display: table;
+  width: 100%;
+  height: auto; }
+  .fg-ownersRep-agree input[type=checkbox],
+  .fg-ownersRep-agree label {
+    display: table-cell;
+    vertical-align: top; }
+  .fg-ownersRep-agree input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; }
+  .fg-ownersRep-agree label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-ownersRep-cta {
+  display: block;
+  margin-top: 20px; }
+  .fg-ownersRep-cta .button {
+    display: block;
+    width: 100%; }
+
+.fg-ownersRep-descCol {
+  padding-right: 40px;
+  font-weight: 400;
+  color: #515151; }
+  .fg-ownersRep-descCol h3 {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+  .fg-ownersRep-descCol .fg-ownersRepDesc {
+    font-size: 14px; }
+    .fg-ownersRep-descCol .fg-ownersRepDesc p {
+      display: block;
+      margin: 0; }
+    .fg-ownersRep-descCol .fg-ownersRepDesc p + p {
+      margin-top: 20px; }
+    .fg-ownersRep-descCol .fg-ownersRepDesc ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin: 20px 0; }
+      .fg-ownersRep-descCol .fg-ownersRepDesc ul li {
+        display: block;
+        margin: 5px 0;
+        position: relative; }
+        .fg-ownersRep-descCol .fg-ownersRepDesc ul li::before {
+          content: "•";
+          display: inline-block;
+          vertical-align: baseline;
+          width: 30px;
+          text-align: center; }
+
+#fg-studyCases-carousel {
+  padding: 40px 0; }
+
+.fg-studyCases-carouselList {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 50px; }
+  .fg-studyCases-carouselList li {
+    height: auto;
+    padding: 0 10px; }
+  .fg-studyCases-carouselList .makeBg {
+    display: block;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding-top: 70%; }
+  .fg-studyCases-carouselList .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #dadada;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer; }
+  .fg-studyCases-carouselList .slick-prev {
+    left: 0; }
+  .fg-studyCases-carouselList .slick-next {
+    right: 0; }
+
+.fg-studyCases-cta {
+  margin-top: 40px; }
+
+#fg-projectsToInvest {
+  padding: 40px;
+  background: #f8f8f8; }
+
+.fg-projectsToInvest-carouselList {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .fg-projectsToInvest-carouselList li {
+    height: auto;
+    padding: 0 10px; }
+  .fg-projectsToInvest-carouselList .makeBg {
+    display: block;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding-top: 70%; }
+  .fg-projectsToInvest-carouselList .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    cursor: pointer; }
+  .fg-projectsToInvest-carouselList .slick-prev {
+    left: 10px; }
+  .fg-projectsToInvest-carouselList .slick-next {
+    right: 10px; }
+
+.fg-projectsToInvest-carouelItemDesc {
+  padding: 10px 0; }
+  .fg-projectsToInvest-carouelItemDesc h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #515151; }
+  .fg-projectsToInvest-carouelItemDesc p {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-projectsToInvest-cta {
+  margin-top: 40px; }
+
+#fg-featuredposts {
+  padding: 40px 0; }
+
+.fg-featuredposts-intro h2 {
+  margin-bottom: 0; }
+
+.fg-homeblog-item-blue.fg-homeblog-item article {
+  border-color: #04a8de; }
+
+.fg-homeblog-item-blue .fg-homeblog-itemCategory {
+  color: #04a8de; }
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -1458,7 +1795,15 @@
   #fg-exclusiveDetail-interested .parts {
     display: block; }
   .fg-landProjects-intro {
-    padding: 40px 0; } }
+    padding: 40px 0; }
+  .fg-investors-bePartChart {
+    margin-top: 20px; }
+  .fg-investors-homeAcquirement .fg-investors-homeAcquirementDesc {
+    padding: 0 20px; }
+  .fg-investors-homeAcquirement .fg-landInvestors-homeAcqChartWrap {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -1631,7 +1976,31 @@
   #fg-exclusiveDetail-interested {
     font-size: 12px; }
   .fg-landProjects-intro {
-    padding: 20px; } }
+    padding: 20px; }
+  #fg-landInvestors {
+    padding: 20px 0; }
+  .fg-landInvestors-topChart {
+    padding: 0 20px; }
+  #fg-investors-bePart {
+    padding: 20px; }
+  .fg-investors-bePartCont {
+    padding: 20px 0; }
+  .fg-investors-bePartText {
+    padding-right: 0; }
+  .fg-investors-bePartChart {
+    margin-top: 10px; }
+  .fg-investors-homeAcquirement {
+    padding: 20px 0; }
+  .fg-investors-homeAcquirement .fg-investors-homeAcquirementImg {
+    margin-bottom: 30px; }
+    .fg-investors-homeAcquirement .fg-investors-homeAcquirementImg img {
+      max-width: 70%; }
+  .fg-investors-homeAcquirement .fg-investors-homeAcquirementDesc {
+    padding: 0; }
+  .fg-investors-homeAcquirement .fg-landInvestors-homeAcqChartWrap {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 419px) {
   .fg-estatesGrid-pagination ul li {
