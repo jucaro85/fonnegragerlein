@@ -435,6 +435,23 @@ function appraisalCharts(){
 	}
 }
 
+function blogLanSlider(){
+	$('.blog-sliderList').each(function(){
+		$(this).slick({
+			adaptiveHeight: true,
+			dots: false,
+			prevArrow: '<span class="fa fa-angle-left slick-prev"></span>',
+			nextArrow: '<span class="fa fa-angle-right slick-next"></span>'
+		});
+	});
+}
+
+function formDatepickers(){
+	if($('.datepicker').length){
+		$('.datepicker').datepicker();
+	}
+}
+
 $(document).ready(function(){
 
   $("#fg-slickHome").slick({
@@ -465,6 +482,9 @@ $(document).ready(function(){
   investorsDetailChart();
 
   appraisalCharts();
+
+  formDatepickers();
+  blogLanSlider();
 
   /* Header */
   $('#fg-rspvBtn a').click(function(){
