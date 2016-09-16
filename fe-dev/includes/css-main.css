@@ -2904,7 +2904,14 @@ a {
     padding-bottom: 0;
     border: 0; }
   .fg-investorPDetail-descImglist {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  #fg-homecontact.fg-contactBlue {
+    padding: 30px 0; }
+  .fg-contactMarine-text {
+    padding: 0;
+    margin-bottom: 30px; }
+  .fg-triangleLeft:before {
+    display: none; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -3178,7 +3185,9 @@ a {
     text-align: center; }
   .fg-consultancy-icon {
     padding: 0;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .fg-homecontact-captcha {
+    overflow: hidden; } }
 
 @media only screen and (max-width: 419px) {
   .fg-estatesGrid-pagination ul li {
