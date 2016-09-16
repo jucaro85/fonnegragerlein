@@ -129,7 +129,8 @@ function projectsToInvestCarousel(){
 }
 
 function landInvestorsCharts(){
-	var investorsTopCtx = $('#fg-landInvestors-topChart'),
+	if($('#fg-landInvestors-topChart').length){
+		var investorsTopCtx = $('#fg-landInvestors-topChart'),
 		investorsTopChart = new Chart(investorsTopCtx, {
 			type: 'line',
 			data: {
@@ -183,9 +184,11 @@ function landInvestorsCharts(){
 				}
 			}
 		});
-	$('#fg-landInvestors-topChart').parent().append(investorsTopChart.generateLegend());
+		$('#fg-landInvestors-topChart').parent().append(investorsTopChart.generateLegend());
+	}
 
-	var investorsBepartCtx = $('#fg-landInvestors-bepartChart'),
+	if($('#fg-landInvestors-bepartChart').length){
+		var investorsBepartCtx = $('#fg-landInvestors-bepartChart'),
 		investorsBepartChart = new Chart(investorsBepartCtx, {
 			type: 'horizontalBar',
 			data: {
@@ -221,8 +224,10 @@ function landInvestorsCharts(){
 				}
 			}
 		});
+	}
 
-	var investorsHomeAcqCtx = $('#fg-landInvestors-homeAcqChart'),
+	if($('#fg-landInvestors-homeAcqChart').length){
+		var investorsHomeAcqCtx = $('#fg-landInvestors-homeAcqChart'),
 		investorsHomeAcqChart = new Chart(investorsHomeAcqCtx, {
 			type: 'bar',
 			data: {
@@ -259,6 +264,175 @@ function landInvestorsCharts(){
 				}
 			}
 		});
+	}
+}
+
+function investorsDetailChart(){
+	if($('#fg-investorPDetail-mainChart').length){
+		var investorsDetailCtx = $('#fg-investorPDetail-mainChart'),
+		investorsDetailChart = new Chart(investorsDetailCtx, {
+			type: 'line',
+			data: {
+				labels: ['2012','2013','2014','2015','2016'],
+				datasets: [
+					{
+						data: [20,10,17,100,0],
+						label: 'Bener',
+						backgroundColor: 'rgba(112,1,209,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [15,30,80,60,20],
+						label: 'Care',
+						backgroundColor: 'rgba(4,168,222,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [0,75,30,55,7],
+						label: 'Gold',
+						backgroundColor: 'rgba(250,205,130,0.4)',
+						borderColor: 'rgba(0,0,0,0)',
+						borderWidth: 0,
+						fill: true,
+						lineTension: 0,
+						pointRadius: 0
+					}
+				]
+			},
+			options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+					}],
+					yAxes: [{
+						display: false
+					}]
+				}
+			}
+		});
+		$('#fg-investorPDetail-mainChart').parent().append(investorsDetailChart.generateLegend());
+	}
+}
+
+function appraisalCharts(){
+	if($('#fg-appraisal-study-barchart1').length){
+		var investorsDetailCtx = $('#fg-appraisal-study-barchart1'),
+		investorsDetailChart = new Chart(investorsDetailCtx, {
+			type: 'bar',
+			data: {
+				labels: ['Casa','Apto','Otros'],
+				datasets: [
+					{
+						data: [50,80,40],
+						backgroundColor: [
+							'rgba(250,5,30,0.4)',
+							'rgba(250,205,130,0.4)',
+							'rgba(112,1,209,0.4)'
+						]
+					}
+				]
+			},
+			options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+					}],
+					yAxes: [{
+						gridLines: {
+							display: false
+						},
+						ticks: {
+							min: 0,
+							max: 100,
+							stepSize: 25
+						}
+					}]
+				}
+			}
+		});
+	}
+
+	if($('#fg-appraisal-study-linechart1').length){
+		var investorsDetailCtx = $('#fg-appraisal-study-linechart1'),
+		investorsDetailChart = new Chart(investorsDetailCtx, {
+			type: 'line',
+			data: {
+				labels: ['ENE','FEB','MAR','ABR','MAY'],
+				datasets: [
+					{
+						data: [2,1,1.7,10,0],
+						label: 'Bener',
+						borderColor: 'rgba(112,1,209,0.8)',
+						borderWidth: 1,
+						fill: false,
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [1.5,3,8,6,2],
+						label: 'Care',
+						borderColor: 'rgba(4,168,222,0.8)',
+						borderWidth: 1,
+						fill: false,
+						lineTension: 0,
+						pointRadius: 0
+					},
+					{
+						data: [0,7.5,3,5.5,0.5],
+						label: 'Gold',
+						borderColor: 'rgba(250,205,130,0.8)',
+						borderWidth: 1,
+						fill: false,
+						lineTension: 0,
+						pointRadius: 0
+					}
+				]
+			},
+			options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+					}],
+					yAxes: [{
+						gridLines: {
+							display: false
+						},
+						ticks: {
+							min: 0,
+							max: 10,
+							stepSize: 2.5
+						}
+					}],
+					ticks: {
+						beginAtZero: false
+					}
+				}
+			}
+		});
+	}
 }
 
 $(document).ready(function(){
@@ -287,5 +461,9 @@ $(document).ready(function(){
   landInvestorsCharts();
   studycasesCarousel();
   projectsToInvestCarousel();
+
+  investorsDetailChart();
+
+  appraisalCharts();
 
 });
