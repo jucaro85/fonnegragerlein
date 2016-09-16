@@ -5,8 +5,7 @@ body {
   font-family: "Proxima Nova", 'Montserrat', sans-serif; }
 
 a:focus {
-  text-decoration: inherit;
-  color: inherit; }
+  text-decoration: inherit; }
 
 .makeBg {
   background-color: #EEE;
@@ -61,6 +60,11 @@ a:focus {
   .button.button-lightblue:hover, .button.button-lightblue.active {
     color: #FFF;
     background: #04a8de; }
+  .button.button-green {
+    background: #26f044; }
+  .button.button-green:hover, .button.button-green.active {
+    background: #FFF;
+    border-color: #EEE; }
 
 .fg-homesection-intro {
   padding: 30px 0; }
@@ -80,6 +84,157 @@ a:focus {
   font-weight: 300;
   line-height: 1.8;
   color: #4a4a4a; }
+
+.marine-text {
+  color: #00c69f !important; }
+
+/* HEADER */
+#fg-header {
+  background: #000;
+  border-top: solid 2px #26f044;
+  position: relative; }
+
+#fg-header.fg-headerHome {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.2)); }
+
+#fg-mainLogo {
+  max-height: 55px;
+  max-width: 60px; }
+  #fg-mainLogo a {
+    padding: 13px 15px 14px;
+    background: #26f044;
+    display: block; }
+  #fg-mainLogo img {
+    max-width: 100%; }
+
+.fg-headerHome #fg-mainLogo {
+  width: 170px;
+  max-width: 40%; }
+
+.fg-headerHome #fg-mainLogo a {
+  padding: 18px 0 18px 20px;
+  background: transparent; }
+
+#fg-mainLogo {
+  float: left; }
+
+#fg-mainMenu {
+  float: left; }
+  #fg-mainMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px; }
+  #fg-mainMenu li {
+    display: inline-block; }
+
+#fg-userAccess ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px 0 10px; }
+
+#fg-userAccess li {
+  display: inline-block; }
+
+#fg-userAccess a {
+  color: #FFF;
+  height: 55px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 10px;
+  display: block; }
+
+#fg-userAccess a:hover {
+  text-decoration: none;
+  color: #26f044; }
+
+.fg-mainMenu-link {
+  color: #FFF;
+  height: 55px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0 10px;
+  display: block; }
+
+.fg-mainMenu-link:hover {
+  text-decoration: none; }
+
+#fg-userAccess {
+  float: right; }
+
+#fg-rspvBtn {
+  display: none; }
+
+/* Footer */
+#fg-footer {
+  background: #000;
+  color: #EEE;
+  border-top: solid 3px #26f044; }
+
+.fg-footerList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em; }
+
+.fg-footerTitle {
+  color: #26f044;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.fg-footerList a {
+  color: #EEE;
+  display: inline-block;
+  padding: 2px 0;
+  font-size: 13px; }
+
+.fg-footerList-spc {
+  margin-top: .9em; }
+
+.fg-footerSecondRow {
+  padding: 20px 0;
+  border-top: solid 1px #414141; }
+
+.fg-footerFirstRow {
+  padding: 1.5em 0 1em;
+  margin-left: -30px; }
+
+.fg-footerFirstRow .parts {
+  padding-left: 30px; }
+
+#fg-subsForm {
+  font-family: 'Lato', sans-serif; }
+  #fg-subsForm .button {
+    width: 100%; }
+  #fg-subsForm .fg-input {
+    padding-bottom: 1px; }
+
+.fg-backbone {
+  text-align: center;
+  padding: 15px;
+  background: #FFF; }
+
+.fg-footerSocial .fa {
+  background: #FFF;
+  color: #414141;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 5px 10px 5px 0;
+  font-size: 20px; }
+
+.fg-footerSocial .fa:hover {
+  background: #26f044;
+  color: #111;
+  text-decoration: none; }
 
 /* Home Banner */
 #fg-mainBanner {
@@ -188,6 +343,27 @@ a:focus {
   height: 40px;
   padding: 0 15px 0 7px;
   width: 100%; }
+
+.fg-input {
+  position: relative;
+  padding-bottom: 10px; }
+  .fg-input input {
+    width: 100%;
+    margin: 0;
+    padding: 0 6px;
+    height: 40px;
+    font-size: 14px;
+    border: 0;
+    color: #414141;
+    font-family: 'Lato', sans-serif; }
+
+.fg-button {
+  padding-bottom: 1em;
+  text-align: center; }
+
+.fg-checkBox {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
 
 /* INTRODUCING FG HOME */
 .fg-introHome-pic {
@@ -510,6 +686,9 @@ a:focus {
   .texto * + h3,
   .texto * + h4 {
     margin-top: 1em; }
+
+.texto.smallText {
+  font-size: 13px; }
 
 .fg-proyectosFases-holder {
   margin-left: -50px; }
@@ -2618,3 +2797,86 @@ a:focus {
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  #fg-mainMenu {
+    font-size: 0; }
+  .fg-mainMenu-link {
+    padding: 0 7px;
+    font-size: 12px; }
+  #fg-userAccess a {
+    padding: 0 7px;
+    font-size: 12px; }
+  #fg-mainMenu ul {
+    padding-left: 15px; }
+  #fg-userAccess ul {
+    padding: 0 15px 0 0; }
+  #fg-mainMenu li:first-child {
+    display: none; } }
+
+@media only screen and (max-width: 979px) {
+  #fg-userAccess {
+    float: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10; }
+  #fg-userAccess a {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #EEE; }
+  #fg-rspvBtn {
+    display: block;
+    float: right; }
+  #fg-userAccess li {
+    flex: 1; }
+  #fg-userAccess ul {
+    display: flex; }
+  #fg-header.fg-headerHome {
+    background: linear-gradient(black, rgba(0, 0, 0, 0.6)); } }
+
+@media only screen and (max-width: 720px) {
+  #fg-mainMenu {
+    float: none; }
+  #fg-mainMenu ul {
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    clear: both;
+    text-align: right; }
+  #fg-mainMenu li {
+    display: block;
+    border-top: solid 1px rgba(255, 255, 255, 0.05); }
+  #fg-mainMenu li:first-child {
+    display: block; }
+  .fg-mainMenu-link {
+    height: auto;
+    padding: 1em 1.5em;
+    line-height: 100%; }
+  #fg-rspvBtn {
+    display: block;
+    float: right;
+    top: 0;
+    right: 0;
+    position: relative; }
+    #fg-rspvBtn a {
+      display: block;
+      width: 55px;
+      height: 55px;
+      text-align: center; }
+    #fg-rspvBtn a span,
+    #fg-rspvBtn a:before,
+    #fg-rspvBtn a:after {
+      content: "";
+      position: absolute;
+      background: #FFF;
+      height: 2px;
+      left: 12px;
+      right: 15px; }
+    #fg-rspvBtn a span {
+      top: 50%; }
+    #fg-rspvBtn a:before {
+      top: 30%; }
+    #fg-rspvBtn a:after {
+      top: 70%; } }

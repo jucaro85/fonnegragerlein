@@ -2,3 +2,86 @@
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1299px) {
+  #fg-mainMenu {
+    font-size: 0; }
+  .fg-mainMenu-link {
+    padding: 0 7px;
+    font-size: 12px; }
+  #fg-userAccess a {
+    padding: 0 7px;
+    font-size: 12px; }
+  #fg-mainMenu ul {
+    padding-left: 15px; }
+  #fg-userAccess ul {
+    padding: 0 15px 0 0; }
+  #fg-mainMenu li:first-child {
+    display: none; } }
+
+@media only screen and (max-width: 979px) {
+  #fg-userAccess {
+    float: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10; }
+  #fg-userAccess a {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #EEE; }
+  #fg-rspvBtn {
+    display: block;
+    float: right; }
+  #fg-userAccess li {
+    flex: 1; }
+  #fg-userAccess ul {
+    display: flex; }
+  #fg-header.fg-headerHome {
+    background: linear-gradient(black, rgba(0, 0, 0, 0.6)); } }
+
+@media only screen and (max-width: 720px) {
+  #fg-mainMenu {
+    float: none; }
+  #fg-mainMenu ul {
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    clear: both;
+    text-align: right; }
+  #fg-mainMenu li {
+    display: block;
+    border-top: solid 1px rgba(255, 255, 255, 0.05); }
+  #fg-mainMenu li:first-child {
+    display: block; }
+  .fg-mainMenu-link {
+    height: auto;
+    padding: 1em 1.5em;
+    line-height: 100%; }
+  #fg-rspvBtn {
+    display: block;
+    float: right;
+    top: 0;
+    right: 0;
+    position: relative; }
+    #fg-rspvBtn a {
+      display: block;
+      width: 55px;
+      height: 55px;
+      text-align: center; }
+    #fg-rspvBtn a span,
+    #fg-rspvBtn a:before,
+    #fg-rspvBtn a:after {
+      content: "";
+      position: absolute;
+      background: #FFF;
+      height: 2px;
+      left: 12px;
+      right: 15px; }
+    #fg-rspvBtn a span {
+      top: 50%; }
+    #fg-rspvBtn a:before {
+      top: 30%; }
+    #fg-rspvBtn a:after {
+      top: 70%; } }

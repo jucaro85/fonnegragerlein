@@ -2,7 +2,7 @@
 
 /* Generales */
 	body{font-family: "Proxima Nova", 'Montserrat', sans-serif;}
-	a:focus{ text-decoration: inherit; color: inherit; }
+	a:focus{ text-decoration: inherit;}
 	.makeBg{ background-color: #EEE; background-position: 50% 50%; background-size: cover; }
 	.container{ max-width:1060px; padding: 0 40px; margin:0 auto;}
 	.smallContainer{ max-width:800px; padding: 0 40px; margin:0 auto;}
@@ -20,12 +20,63 @@
 		&.button-lightblue{ border-color:$blue; }
 		&.button-lightblue:hover,
 		&.button-lightblue.active{ color:#FFF; background:$blue; }
+		&.button-green{ background: $green; }
+		&.button-green:hover,
+		&.button-green.active{ background:#FFF; border-color:#EEE; }
 	}
 	.fg-homesection-intro{
 		padding: 30px 0;
 		h2{ display: block; margin: 0; margin-bottom: 40px; font-size: 24px; font-weight: 400; line-height: 1; text-transform: uppercase; color: $greent; }
 	}
 	.fg-homesection-introDesc{ margin-bottom: 20px; font-size: 14px; font-weight: 300; line-height: 1.8; color: $black; }
+	.marine-text{ color:$marine !important;}
+
+/* HEADER */
+	#fg-header{ background:#000; border-top: solid 2px $green; position:relative; }
+	#fg-header.fg-headerHome{ position: absolute; top: 0; right:0; left: 0; z-index:2; background: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,.2) );}
+	#fg-mainLogo{ max-height:55px; max-width:60px;  
+		a{padding: 13px 15px 14px; background:$green; display: block;}
+		a:hover{ }
+		img{ max-width:100%;}
+	}
+	.fg-headerHome{
+		#fg-mainLogo{ width:170px; max-width:40%; }
+		#fg-mainLogo a{padding: 18px 0 18px 20px; background: transparent; }
+	}
+	#fg-mainLogo{ float:left; }
+	#fg-mainMenu{ float:left;  
+		ul{list-style: none; margin: 0; padding: 0 0 0 20px;}
+		li{ display: inline-block; }
+	}
+	#fg-userAccess{
+		ul{list-style: none; margin: 0; padding: 0 20px 0 10px;}
+		li{ display: inline-block; }
+		a{ color: #FFF; height: 55px; line-height: 55px; text-transform:uppercase; font-size:12px; padding: 0 10px; display: block}
+		a:hover{ text-decoration: none; color: $green; }
+	}
+	.fg-mainMenu-link{ color: #FFF; height: 55px; line-height: 55px; text-transform:uppercase; font-size:13px; padding: 0 10px; display: block}
+	.fg-mainMenu-link:hover{ text-decoration:none;}
+	#fg-userAccess{ float: right; }
+	#fg-rspvBtn{ display:none;  }
+
+/* Footer */
+	#fg-footer{ background: #000; color:#EEE; border-top: solid 3px $green;}
+	.fg-footerList{ list-style: none; padding: 0; margin: 0 0 1em; }
+	.fg-footerTitle{ color:$green; font-size:16px; text-transform: uppercase;  }
+	.fg-footerList a{ color:#EEE; display: inline-block; padding: 2px 0; font-size:13px;}
+	.fg-footerList-spc{ margin-top: .9em;}
+	.fg-footerSecondRow{ padding: 20px 0; border-top: solid 1px #414141; }
+	.fg-footerFirstRow{ padding: 1.5em 0 1em; margin-left: -30px; }
+	.fg-footerFirstRow .parts{ padding-left:30px;}
+	#fg-subsForm{ font-family: 'Lato', sans-serif;
+		.button{ width:100%;}
+		.fg-input{ padding-bottom: 1px;}
+	}
+	.fg-backbone{ text-align: center; padding: 15px; background: #FFF;}
+	.fg-footerSocial .fa{ background: #FFF; color:#414141;
+		display: inline-block; width:40px; height:40px; text-align: center; line-height:40px; border-radius:50%; margin: 5px 10px 5px 0; font-size: 20px;}
+	.fg-footerSocial .fa:hover{ background: $green; color:#111; text-decoration: none;}
+
 
 /* Home Banner */
 	#fg-mainBanner{ position:relative; }
@@ -49,6 +100,11 @@
 	.fg-select{ position:relative; }
 	.fg-select:after{ position: absolute; top:0; right: 0; bottom:0; width:40px; background:#FFF; font-family:'FontAwesome'; content:"\f0d7"; line-height:40px; text-align:center; pointer-events:none }
 	.fg-select select{ -moz-appearance:textfield; -webkit-appeareance:textfield; background: #FFF; appearence:none; border:0; height:40px; padding:0 15px 0 7px; width:100%; }
+	.fg-input{ position:relative; padding-bottom: 10px; 
+		input{ width:100%; margin:0; padding: 0 6px; height:40px; font-size: 14px; border: 0; color:#414141; font-family: 'Lato', sans-serif;}
+	}
+	.fg-button{ padding-bottom: 1em; text-align: center;}
+	.fg-checkBox{ font-family: 'Lato', sans-serif; font-weight: 400; }
 
 /* INTRODUCING FG HOME */
 	.fg-introHome-pic{ background:#000; text-align:center; color:#f9f9f9; position:relative; }
@@ -141,6 +197,7 @@
 		* + h3,
 		* + h4{ margin-top: 1em;}
 	}
+	.texto.smallText{ font-size: 13px;}
 	.fg-proyectosFases-holder{ margin-left:-50px;}
 	.fg-proyectosFases-item{ padding-left:50px;}
 	
