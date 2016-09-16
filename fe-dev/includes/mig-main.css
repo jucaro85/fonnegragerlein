@@ -1994,6 +1994,175 @@
   font-weight: 400;
   color: #515151; }
 
+/* LANDING BLOG */
+#fg-blogTop {
+  padding: 20px 0; }
+
+.blog-slider {
+  padding: 0 40px; }
+
+.blog-sliderList {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 50px; }
+  .blog-sliderList li {
+    display: block;
+    height: auto; }
+  .blog-sliderList figure {
+    display: block;
+    margin: 0;
+    padding: 40px 20px;
+    position: relative; }
+  .blog-sliderList .makeBg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .blog-sliderList figcaption {
+    display: block;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 2; }
+  .blog-sliderList h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a4a4a; }
+  .blog-sliderList time {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #515151; }
+  .blog-sliderList .blog-slide-desc {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #515151; }
+    .blog-sliderList .blog-slide-desc p {
+      display: block;
+      margin: 0; }
+    .blog-sliderList .blog-slide-desc p + p {
+      margin-top: 1em; }
+  .blog-sliderList .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #dadada;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer; }
+  .blog-sliderList .slick-prev {
+    left: 0; }
+  .blog-sliderList .slick-next {
+    right: 0; }
+
+#fg-topreadings {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #f8f8f8; }
+
+.fg-topreadings-intro h2 {
+  margin: 0; }
+
+#fg-blogallnews {
+  padding: 40px 0; }
+  #fg-blogallnews .fg-estatesGrid-pagination {
+    padding-bottom: 0; }
+  #fg-blogallnews .fg-estatesGrid-pagination ul {
+    padding-bottom: 0; }
+
+.fg-blogallnews-intro h2 {
+  margin: 0; }
+
+/* LANDING BLOG */
+#fg-blogDetailArt {
+  padding: 40px 60px;
+  color: #515151;
+  line-height: 1.7; }
+  #fg-blogDetailArt p {
+    margin: 0; }
+  #fg-blogDetailArt p + p {
+    margin-top: 1em; }
+  #fg-blogDetailArt h1 {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400; }
+  #fg-blogDetailArt .fg-sharelinks {
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: left; }
+  #fg-blogDetailArt time {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #515151;
+    margin-bottom: 20px; }
+
+.fg-blogDetailArt-shortDesc {
+  font-size: 16px; }
+
+.fg-blogDetailArt-mainImg {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  height: 0;
+  padding-top: 60%; }
+
+.fg-blogDetailArt-cont {
+  font-size: 14px; }
+  .fg-blogDetailArt-cont .embed-responsive {
+    margin: 20px 0; }
+
+.fg-blogDetail-comments {
+  display: block;
+  padding: 20px 60px; }
+
+.fg-blogDetail-asideArts {
+  padding: 20px 40px;
+  background: #f8f8f8; }
+  .fg-blogDetail-asideArts h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #04a8de; }
+  .fg-blogDetail-asideArts .fg-homeblog-item {
+    padding: 0;
+    margin-bottom: 20px; }
+
+.fg-blogDetail-asideSuscribe {
+  padding: 30px;
+  background: #d6fcdc; }
+  .fg-blogDetail-asideSuscribe h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -2103,7 +2272,14 @@
     padding: 0;
     margin-bottom: 30px; }
   .fg-triangleLeft:before {
-    display: none; } }
+    display: none; }
+  .blog-slider {
+    padding: 0; }
+  #fg-blogDetailArt {
+    padding: 40px 20px; }
+  .fg-blogDetail-comments,
+  .fg-blogDetail-asideArts {
+    padding: 20px; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -2379,7 +2555,17 @@
     padding: 0;
     margin-bottom: 20px; }
   .fg-homecontact-captcha {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .blog-sliderList figure {
+    padding: 0; }
+  .blog-sliderList .makeBg {
+    position: static;
+    height: 0;
+    padding-top: 35%; }
+  .blog-sliderList figcaption {
+    background: #f8f8f8; }
+  .blog-sliderList .blog-slide-desc {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 419px) {
   .fg-estatesGrid-pagination ul li {
@@ -2387,4 +2573,6 @@
     .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationPrev, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationNext, .fg-estatesGrid-pagination ul li.fg-estatesGrid-paginationDots, .fg-estatesGrid-pagination ul li.current {
       display: inline-block; }
   .fg-investorPDetail-introBanner .makeBg {
-    padding-top: 50%; } }
+    padding-top: 50%; }
+  .blog-sliderList .makeBg {
+    padding-top: 60%; } }
