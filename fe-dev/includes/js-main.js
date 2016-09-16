@@ -466,4 +466,14 @@ $(document).ready(function(){
 
   appraisalCharts();
 
+  /* Header */
+  $('#fg-rspvBtn a').click(function(){
+  	$(this).toggleClass('active');
+  	if($(this).hasClass('active')){
+  		$('#fg-mainMenu').slideDown(500);
+  	}else{
+  		$('#fg-mainMenu').slideUp(500);
+  	}
+  });
+
 });
