@@ -83,8 +83,25 @@
             <div id="fg-userAccess">
                <ul>
                   <li><a href="#">Acceso clientes</a></li>
-                  <li><a href="#">Iniciar sesion</a></li>
+                  <li><a href="#fg-loginBox" id="fg-toggle-loginBox">Iniciar sesion</a></li>
                </ul>
+               <div id="fg-loginBox" class="text-center">
+                  <form action="">
+                     <div class="fg-loginBox-input">
+                        <label for="fg-login-user">Usuario</label>
+                        <input id="fg-login-user" type="email">
+                     </div>
+                     <div class="fg-loginBox-input">
+                        <label for="fg-login-pass">Contraseña</label>
+                        <input id="fg-login-pass" type="password">
+                     </div>
+                     <div class="fg-loginBox-buttons">
+                        <a href="#" class="fg-loginBox-forgot">¿Olvidaste tu contraseña?</a>
+                        <p>Si no tiene cuenta <a href="#">registrese aquí</a></p>
+                        <button class="button button-black" type="submit">Iniciar sesión</button>
+                     </div>
+                  </form>
+               </div>
             </div>
             
          </header>
@@ -715,12 +732,6 @@
          </div>
       </footer>
       <!-- /FOOTER -->
-        
-
-      <!-- Maps 
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
-      <script src="includes/js_infobox.js"></script>
-      <script src="includes/js_maps.js"></script>  
-        -->
+      
     </body>
 </html>

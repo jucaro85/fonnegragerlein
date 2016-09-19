@@ -68,6 +68,12 @@ a {
   .button.button-green:hover, .button.button-green.active {
     background: #FFF;
     border-color: #EEE; }
+  .button.button-black {
+    background: #000;
+    color: #fff; }
+  .button.button-black:hover, .button.button-black.active {
+    background: #26f044;
+    color: #000; }
 
 .fg-homesection-intro {
   padding: 30px 0; }
@@ -2971,6 +2977,323 @@ a {
     text-transform: uppercase;
     color: #4a4a4a; }
 
+/* REGISTER */
+#fg-register {
+  padding-top: 40px; }
+
+.fg-register-borderForm {
+  padding: 40px 0;
+  border: dashed #ccc;
+  border-width: 1px 0; }
+
+.fg-form-register {
+  padding-bottom: 40px; }
+  .fg-form-register .fg-form-input {
+    vertical-align: middle; }
+
+.fg-form-input {
+  margin: 15px 0;
+  padding: 0 20px; }
+  .fg-form-input label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+  .fg-form-input input[type=text],
+  .fg-form-input input[type=email],
+  .fg-form-input input[type=password] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    color: #515151; }
+
+.fg-form-radio-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; }
+  .fg-form-radio-box input[type=radio],
+  .fg-form-radio-box label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer; }
+  .fg-form-radio-box input[type=radio] {
+    width: 18px;
+    height: 18px; }
+  .fg-form-radio-box label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #515151; }
+
+.fg-register-checknews {
+  padding: 40px 0; }
+  .fg-register-checknews .parts {
+    vertical-align: middle; }
+  .fg-register-checknews p {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-form-check-box {
+  display: inline-table;
+  width: 24%;
+  height: auto;
+  margin: 5px 0; }
+  .fg-form-check-box input[type=checkbox],
+  .fg-form-check-box label {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer; }
+  .fg-form-check-box input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px; }
+  .fg-form-check-box label {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-form-agree {
+  display: table;
+  width: 100%; }
+  .fg-form-agree input[type=checkbox],
+  .fg-form-agree label {
+    display: table-cell;
+    vertical-align: top; }
+  .fg-form-agree input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px; }
+  .fg-form-agree label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+
+.fg-form-captcha {
+  padding: 20px 0 40px;
+  text-align: center;
+  overflow: hidden; }
+  .fg-form-captcha .g-recaptcha {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden; }
+
+/* PROFILE */
+#fg-profile {
+  padding-top: 40px; }
+
+.fg-profile-data {
+  padding: 40px 0;
+  border: dashed #ccc;
+  border-width: 1px 0; }
+  .fg-profile-data figure {
+    display: block;
+    width: 100%;
+    max-width: 130px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #04a8de;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden; }
+    .fg-profile-data figure .makeBg {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-top: 110%;
+      border-radius: 4px; }
+  .fg-profile-data h2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+
+.fg-profile-dataCol {
+  padding: 0 10px; }
+  .fg-profile-dataCol ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+    .fg-profile-dataCol ul li {
+      display: block;
+      margin: 5px 0; }
+  .fg-profile-dataCol .button {
+    margin-top: 30px; }
+
+.fg-profile-girdTitle {
+  padding: 10px 20px; }
+  .fg-profile-girdTitle h3 {
+    display: block;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+
+/* RECOVER PASS */
+.fg-recoverPass {
+  border-top: 1px dashed #ccc;
+  padding-top: 40px; }
+  .fg-recoverPass .fg-form-agree {
+    padding: 40px 0; }
+
+/* CONTACT FORM */
+.fg-form-eContact {
+  padding-bottom: 40px; }
+
+.fg-form-textarea {
+  margin: 15px 0;
+  padding: 0 20px; }
+  .fg-form-textarea label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151; }
+  .fg-form-textarea textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    color: #515151;
+    resize: none; }
+
+.fg-eContact-check .parts {
+  vertical-align: middle;
+  padding: 0 20px; }
+
+.fg-eContact-check .fg-form-captcha {
+  text-align: left; }
+
+#fg-partners {
+  padding: 60px 0; }
+  #fg-partners h3 {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #515151; }
+
+.fg-partnersList {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 50px; }
+  .fg-partnersList li {
+    height: auto; }
+  .fg-partnersList a {
+    display: block;
+    text-decoration: none; }
+  .fg-partnersList img {
+    display: block;
+    width: 95%;
+    max-width: 120px;
+    height: auto;
+    max-height: 100px;
+    margin: 0 auto; }
+  .fg-partnersList .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer; }
+  .fg-partnersList .slick-prev {
+    left: 0; }
+  .fg-partnersList .slick-next {
+    right: 0; }
+
+/* LOGIN */
+#fg-loginBox {
+  display: none;
+  width: 180px;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  border-top: 2px solid #26f044;
+  font-size: 12px;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  top: 90%;
+  right: 10px;
+  z-index: 3; }
+  #fg-loginBox::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -3px;
+    border: solid 7px transparent;
+    border-bottom-color: #26f044;
+    position: absolute;
+    top: -15px;
+    left: 50%; }
+  #fg-loginBox .fg-loginBox-input {
+    display: block;
+    margin-bottom: 10px; }
+    #fg-loginBox .fg-loginBox-input label {
+      display: block;
+      font-weight: 400;
+      line-height: 1; }
+    #fg-loginBox .fg-loginBox-input input {
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      text-align: left;
+      color: #515151; }
+  #fg-loginBox .fg-loginBox-buttons {
+    font-size: 11px; }
+    #fg-loginBox .fg-loginBox-buttons a {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      font-size: 11px;
+      line-height: 1;
+      text-transform: none;
+      color: #19d235; }
+    #fg-loginBox .fg-loginBox-buttons .fg-loginBox-forgot {
+      margin-bottom: 10px;
+      padding: 5px 0;
+      border-bottom: 1px solid #26f044;
+      color: #fff; }
+    #fg-loginBox .fg-loginBox-buttons p {
+      display: block;
+      margin: 0; }
+    #fg-loginBox .fg-loginBox-buttons .button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 12px; }
+
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
 --------------------------------------------------------------------------------*/
@@ -3087,7 +3410,11 @@ a {
     padding: 40px 20px; }
   .fg-blogDetail-comments,
   .fg-blogDetail-asideArts {
-    padding: 20px; } }
+    padding: 20px; }
+  .fg-form-agree {
+    margin-top: 20px; }
+  .fg-profile-dataCol {
+    margin-bottom: 40px; } }
 
 @media only screen and (max-width: 679px) {
   .container {
@@ -3373,7 +3700,40 @@ a {
   .blog-sliderList figcaption {
     background: #f8f8f8; }
   .blog-sliderList .blog-slide-desc {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .fg-form-register {
+    padding: 0;
+    padding-bottom: 20px; }
+  .fg-register-borderForm {
+    padding: 20px 0; }
+  .fg-form-input {
+    margin: 0;
+    margin-bottom: 10px; }
+  .fg-register-checknews {
+    padding: 20px 0; }
+    .fg-register-checknews .parts {
+      padding: 0 20px; }
+  .fg-form-check-box {
+    width: 49%; }
+  .fg-form-captcha {
+    padding: 20px; }
+    .fg-form-captcha .g-recaptcha {
+      width: 100%;
+      overflow: hidden; }
+  .fg-profile-dataCol {
+    padding: 0;
+    text-align: center; }
+  .fg-profile-data figure {
+    margin-bottom: 20px; }
+  .fg-recoverPass .fg-form-agree {
+    padding: 20px 0; }
+  .fg-form-eContact {
+    padding: 0 !important;
+    padding-bottom: 40px !important; }
+  .fg-eContact-check .fg-form-captcha {
+    padding: 20px 0; }
+  #fg-partners {
+    padding: 40px 0; } }
 
 @media only screen and (max-width: 419px) {
   .fg-estatesGrid-pagination ul li {
@@ -3383,7 +3743,10 @@ a {
   .fg-investorPDetail-introBanner .makeBg {
     padding-top: 50%; }
   .blog-sliderList .makeBg {
-    padding-top: 60%; } }
+    padding-top: 60%; }
+  .fg-form-register {
+    padding: 0 !important;
+    padding-bottom: 20px !important; } }
 
 /* FG Main Styles */
 /*--------------------------------------------------------------------------------

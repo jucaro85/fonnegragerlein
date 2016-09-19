@@ -1,0 +1,396 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+      <meta name="description" content="">
+      <title>Fonnegra Gerlein</title>
+      
+      <!-- MODERNIZR -->
+         <script src="includes/js-modernizr.js"></script>
+
+      <!-- CSS -->
+
+         <link rel="stylesheet" href="includes/css-plugins.css">
+
+         <!-- Fonts -->
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
+
+         <!-- Main Styles -->
+            <link rel="stylesheet" href="includes/css-main.css">
+
+      <!-- JAVASCRIPT -->
+         <script src="includes/js-jquery.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXJNSon8n_kv4Gcuj7b9jveP0v54Gk4WU"></script>
+
+         <script src="includes/js-plugins.js"></script>
+
+         <!-- Main Scripts -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+            <script src="includes/js-main.js"></script>
+            <script src="includes/js_maps.js"></script>
+
+   </head>
+
+   <body>
+      <!--[if lt IE 8]>
+         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      
+      <!-- HEADER -->
+      <div id="fg-header">
+         <header class="clearfix">
+            <div id="fg-mainLogo">
+               <a href="#">
+                  <img src="media/logo-icon.png" />
+               </a>
+            </div>
+            <div id="fg-rspvBtn">
+               <a href="#">
+                  <span></span>
+               </a>
+            </div>
+            <div id="fg-mainMenu">
+               <ul>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Inicio</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Proyectos</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Club de inversionistas</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Avalúos</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Blog</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Corporativo</a></li>
+               </ul>
+            </div>
+            <div id="fg-userAccess">
+               <ul>
+                  <li><a href="#">Acceso clientes</a></li>
+                  <li><a href="#">Iniciar sesion</a></li>
+               </ul>
+            </div>
+            
+         </header>
+      </div>
+      <!-- /HEADER -->
+
+      <!-- TOP BANNER -->
+      <section id="fg-proyectos-intro">
+         <figure id="fg-slickHome">
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1446141788762-7388aa611e72')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1470485661945-c52d58c91f51')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1442406964439-e46ab8eff7c4')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1470298455676-c71fac677476')"></div>
+            </div>
+         </figure>
+         <div class="fg-overBanner-cont">
+            <div class="smallContainer">
+               <h1 class="fg-overBanner-title">Proyectos de inversión</h1>
+               <div class="fg-overBanner-text">
+                  <p>Paragraph ras dignissim lacinia porttitor. Nunc quis diam quis libero elementum tincidunt. Ut sed diam consectetur, porta sapien at, euismod ipsum. </p>
+               </div>
+               <div class="fg-overBanner-social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-envelope"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /TOP BANNER -->
+
+
+      <!-- Proyectos destacados -->
+      <section id="fg-proyectosFeat">
+         <article class="fg-proyectosFeat-item clearfix">
+            <div class="fg-proyectosFeat-itemPic parts xs-1 m-1-half coverBg" style="background-image:url('media/pic-proy1.jpg')"></div>
+            <div class="fg-proyectosFeat-itemCont xs-1 m-1-half parts">
+               <div class="fg-proyectosFeat-itemText">
+                  <h1 class="marine-text texto-mainTitle">Acerca del proyecto</h1>
+                  <p>Un proyecto de gran valor arquitectónico para los que no se dejan encasillar, prefieren las nuevas experiencias y siempre buscan romper el molde. Un edificio que integra a la comunidad, bien ubicado y con espacios creativos que facilitan el día a día.</p>
+                  <ul>
+                     <li>Apartamentos desde $5.600.000 el m²</li>
+                     <li>Área total construida de 4.138 m², con un área de terrazas de 300 m²</li>
+                     <li>9 tipos de apartamentos de 1 y 2 alcobas.</li>
+                     <li>Un reto en desarrollo arquitectónico de altura, único en el sector.</li>
+                  </ul>
+               </div>
+               <a href="#" class="button button-blue">Ver proyecto</a>
+            </div>
+         </article>
+         <article class="fg-proyectosFeat-item fg-proyecto-detailBar clearfix">
+            <div class="fg-proyectosFeat-itemPic parts xs-1 m-1-half coverBg" style="background-image:url('media/pic-proy2.jpg')"></div>
+            <div class="fg-proyectosFeat-itemCont xs-1 m-1-half parts">
+               <div class="fg-proyectosFeat-itemText">
+                  <h1>Chapinero alto</h1>
+                  <p>Chapinero Alto es un espacio libre de etiquetas, original y creativo. Un lugar para los que buscan su independencia. Ofrece cafés, bares alternativos, restaurantes de autor, librerías independientes, tiendas de diseño y un vecindario tradicional con gente inspirada que prefiere vivir en un ambiente casual.</p>
+               </div>
+               <div class="fg-proyectosFeat-itemText">
+                  <h1>Amenities</h1>
+                  <p>Un complemento de servicios exclusivos para sus habitantes: huerta comunal, espacios de trabajo compartido, cuarto de herramientas común, gimnasio no tradicional equipado para practicar yoga, crossfit y pilates, wi-fi en zonas comunes.</p>
+               </div>
+
+            </div>
+         </article>
+      </section>
+      <!-- /Proyectos destacados -->
+
+      <section class="fg-proyectUbication fg-asesoriaAzul clearfix">
+         <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+            <h2 class="fg-proyectUbication-title marine-text">Ubicación</h2>
+            <div class="texto fg-services-contactDesc">
+               <p>Situado en el corazón de Chapinero Alto, con excelentes vías de acceso para llegar fácilmente a cualquier lugar de la ciudad, gran cobertura de transporte público y una oferta cultural y gastronómica ideal para recorrer en familia.</p>
+            </div>
+         </div>
+
+         <div class="fg-landEstates-map">
+            <div id="gmap"></div>
+            <div class="fg-mapMarker hidden" data-lat="4.664237" data-lng="-74.047979">
+               <article class="fg-infobox-art">
+                  <figure class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></figure>
+                  <h2>Commune 54</h2>
+                  <small>Bogotá</small>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <article class="fg-proyectosFeat-item clearfix">
+            <div class="fg-proyectosFeat-itemPic parts xs-1 m-1-half coverBg" style="background-image:url('media/pic-proy3.jpg')"></div>
+            <div class="fg-proyectosFeat-itemCont xs-1 m-1-half parts">
+               <div class="fg-proyectosFeat-itemText">
+                  <h1 class="marine-text texto-mainTitle">Acerca del proyecto</h1>
+                  <p>Un proyecto de gran valor arquitectónico para los que no se dejan encasillar, prefieren las nuevas experiencias y siempre buscan romper el molde. Un edificio que integra a la comunidad, bien ubicado y con espacios creativos que facilitan el día a día.</p>
+                  <ul>
+                     <li>Apartamentos desde $5.600.000 el m²</li>
+                     <li>Área total construida de 4.138 m², con un área de terrazas de 300 m²</li>
+                     <li>9 tipos de apartamentos de 1 y 2 alcobas.</li>
+                     <li>Un reto en desarrollo arquitectónico de altura, único en el sector.</li>
+                  </ul>
+               </div>
+               <a href="#" class="button button-blue">Ver proyecto</a>
+            </div>
+         </article>
+      </section>
+
+
+      <!-- CONTACT US -->
+      <section id="fg-homecontact" class="fg-contactMarine">
+         <div class="container clearfix">
+            <div class="m-1-half xs-1 parts">
+               <div class="texto fg-contactMarine-text">
+                  <h2 class="fg-triangleLeft">Quiero ser parte de un proyecto</h2>
+                  <p>Envíenos sus datos y nos contactaremos lo más pronto posible.<br> O si prefiere llámenos a los siguientes teléfonos en Bogotá:<br>2 100 305 / 321 319 1919 / 321 318 1818</p>
+                  <h3>SUCURSALES</h3>
+                  <p><b>Bogotá</b><br>
+                  Calle 79 B No. 8 - 40<br>
+                  (571) 2 100 305 - (57) 321 330 30 30 - (57) 321 318 18 18<br>
+                  (57) 314 380 5070<br>
+                  <a href="#">info@fonnegragerlein.com</a></p>
+                  <p><b>Chía</b><br>
+                  (571) 885 55 40 - (57) 310 307 07 07 - (57) 317 432 5107<br>
+                  <a href="#">jtorres@fonnegragerlein.com</a>
+                  </p>
+               </div>
+            </div>
+
+            <div class="m-1-half xs-1 parts fg-contactFomCol">
+               <form action="">
+                  <div class="fg-homecontact-input">
+                     <label for="fg-homecontact-input-name">Nombre completo</label>
+                     <input id="fg-homecontact-input-name" type="text">
+                  </div>
+                  <div class="fg-homecontact-input">
+                     <label for="fg-homecontact-input-phone">Teléfono</label>
+                     <input id="fg-homecontact-input-phone" type="text">
+                  </div>
+                  <div class="fg-homecontact-input">
+                     <label for="fg-homecontact-input-mail">Correo electrónico</label>
+                     <input id="fg-homecontact-input-mail" type="email">
+                  </div>
+                  <div class="fg-homecontact-agree">
+                     <input type="checkbox" id="fg-homecontact-input-agree">
+                     <label for="fg-homecontact-input-agree">Acepto que he leído la <a href="#">política de privacidad</a>.</label>
+                  </div>
+                  <div class="fg-homecontact-captcha">
+                     <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                  </div>
+                  <div class="fg-homecontact-cta">
+                     <button class="button button-white" type="submit">Contactarme</button>
+                  </div>
+               </form>
+            </div>
+            
+         </div>
+
+      </section>
+      <!-- /CONTACT US -->
+
+
+      <!-- BLOG -->
+      <section id="fg-homeblog" class="fg-articles-marine">
+
+         <div class="fg-homesection-intro clearfix fg-intro-marine">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Artículos destacados</h2>
+            </div>
+         </div>
+
+         <div class="fg-homeblog-artlist clearfix inlineParts">
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article class="texto">
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button button-blue">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article class="texto">
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button button-blue">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article class="texto">
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button button-blue">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article class="texto">
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button button-blue">Leer más</a>
+                  </div>
+               </article>
+            </div>
+         </div>
+
+         <div class="fg-homeblog-loadmore text-center">
+            <a href="#" class="button button-blue">Ver más artículos</a>
+         </div>
+
+      </section>
+      <!-- /BLOG -->
+
+      <!-- FOOTER -->
+      <footer id="fg-footer">
+         <div class="container">
+            <div class="fg-footerFirstRow clearfix">
+               <div class="m-1-3rd s-1-half xs-1 parts">
+                  <h2 class="fg-footerTitle">Servicios</h2>
+                  <ul class="fg-footerList">
+                     <li><a href="#">Proyectos</a></li>
+                     <li><a href="#">Club de inversionistas</a></li>
+                     <li><a href="#">Avalúos</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Corporativo</a></li>
+                     <li><a href="#" class="fg-footerList-spc">Contáctenos</a></li>
+                     <li><a href="#" class="fg-footerList-spc">Acceso clientes</a></li>
+                  </ul>
+               </div>
+               <div class="m-1-3rd s-1-half xs-1 parts">
+                  <h2 class="fg-footerTitle">Sucursales</h2>
+                  <div class="fg-footerText texto smallText">
+                     <p>
+                        Bogotá<br>
+                        Calle 79b # 8-40<br>
+                        (571)2 100 305 - (57) 321 330 3030 - (57) 321 3181818 - (57) 314 380 5070<br>
+                        <a href="#">info@fonnegragerlein.com</a>
+                     </p>
+                     <p>
+                        Chía<br>
+                        (571) 885 5540 - (57) 310 307 0707 - (57) 317 432 5107<br>
+                        <a href="#">info@fonnegragerlein.com</a>
+                     </p>
+                  </div>
+               </div>
+               <div class="m-1-3rd s-1 parts">
+                  <h2 class="fg-footerTitle">Suscríbase a nuestro newsletter</h2>
+                  <div class="texto">
+                     <p>Reciba toda la información de FONNEGRA GERLEIN en su correo</p>
+                     <div id="fg-subsForm">
+                        <label>Correo electrónico</label>
+                        <div class="fg-input">
+                           <input type="text" name="" placeholder="tucorreo@correo.sample" />
+                        </div>
+                        <div class="fg-button">
+                           <input type="submit" class="button button-green" name="">
+                        </div>
+                        <div class="fg-acceptCheckbox">
+                           <label class="fg-checkBox">
+                              <span class="fg-checkBoxLabel">He leído y acepto las <a href="#">políticas de privacidad.</a></span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fg-footerSecondRow clearfix">
+               <div class="m-3-4ths parts">
+                  <h2 class="fg-footerTitle">Sobre Fonnegra Gerlein</h2>
+                  <div class="texto smallText">
+                     <p>Fonnegra Gerlein, fundada por Carlos Fonnegra y Margarita Torres, ha desarrollado un amplio conocimiento en el sector inmobiliario durante las últimas tres décadas y se ha posicionado como un referente de confianza brindando asesoría personalizada en finca raíz a través de los servicios de venta y arrendamiento.</p>
+                  </div>
+               </div>
+               <div class="m-1-4th parts">
+                  <h2 class="fg-footerTitle">Siganos</h2>
+                  <div class="fg-footerSocial">
+                     <a href="#" class="fa fa-facebook"></a>
+                     <a href="#" class="fa fa-twitter"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fg-backbone">
+            <a href="#"><img src="http://www.fonnegragerlein.com/media/logo-bbt.png"></a>
+         </div>
+      </footer>
+      <!-- /FOOTER -->
+
+    </body>
+</html>

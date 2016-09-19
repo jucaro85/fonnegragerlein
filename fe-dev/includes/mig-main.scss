@@ -816,6 +816,129 @@
 }
 
 
+/* REGISTER */
+#fg-register{ padding-top: 40px; }
+.fg-register-borderForm{ padding: 40px 0; border: dashed #ccc; border-width: 1px 0; }
+.fg-form-register{
+	padding-bottom: 40px;
+	.fg-form-input{ vertical-align: middle; }
+}
+.fg-form-input{
+	margin: 15px 0; padding: 0 20px;
+	label{ display: block; font-size: 14px; font-weight: 400; color: $grey; }
+	input[type=text],
+	input[type=email],
+	input[type=password]{ display: block; width: 100%; height: 40px; margin: 0; padding: 0 5px; border: 1px solid #ccc; color: $grey; }
+}
+.fg-form-radio-box{
+	display: inline-block; vertical-align: middle; margin-right: 10px;
+	input[type=radio],
+	label{ display: inline-block; vertical-align: middle; margin: 0; cursor: pointer; }
+	input[type=radio]{ width: 18px; height: 18px; }
+	label{ font-size: 16px; font-weight: 400; line-height: 1; color: $grey; }
+}
+.fg-register-checknews{
+	padding: 40px 0;
+	.parts{ vertical-align: middle; }
+	p{ display: block; margin: 0; margin-bottom: 10px; font-size: 14px; font-weight: 400; color: $grey; }
+}
+.fg-form-check-box{
+	display: inline-table; width: 24%; height: auto; margin: 5px 0;
+	input[type=checkbox],
+	label{ display: table-cell; vertical-align: middle; margin: 0; cursor: pointer; }
+	input[type=checkbox]{ width: 18px; height: 18px; margin-right: 5px; }
+	label{ width: 100%; font-size: 14px; font-weight: 400; color: $grey; }
+}
+.fg-form-agree{
+	display: table; width: 100%;
+	input[type=checkbox],
+	label{ display: table-cell; vertical-align: top; }
+	input[type=checkbox]{ width: 18px; height: 18px; margin-right: 5px; }
+	label{ font-size: 14px; font-weight: 400; color: $grey; }
+}
+.fg-form-captcha{
+	padding: 20px 0 40px; text-align: center; overflow: hidden;
+	.g-recaptcha{ display: inline-block; vertical-align: middle; overflow: hidden; }
+}
+
+
+/* PROFILE */
+#fg-profile{ padding-top: 40px; }
+.fg-profile-data{
+	padding: 40px 0; border: dashed #ccc; border-width: 1px 0;
+	figure{
+		display: block; width: 100%; max-width: 130px; margin: 0 auto; padding: 15px; border: 1px solid $blue; border-radius: 8px; background: #fff; overflow: hidden;
+		.makeBg{ display: block; width: 100%; height: 0; padding-top: 110%; border-radius: 4px; }
+	}
+	h2{ display: block; margin: 0; margin-bottom: 15px; font-size: 18px; font-weight: 400; text-transform: uppercase; color: $black; }
+}
+.fg-profile-dataCol{
+	padding: 0 10px;
+	ul{
+		@include resetUL(); font-size: 14px; font-weight: 400; color: $grey;
+		li{ display: block; margin: 5px 0; }
+	}
+	.button{ margin-top: 30px; }
+}
+.fg-profile-girdTitle{
+	padding: 10px 20px;
+	h3{ display: block; margin: 0; font-size: 22px; font-weight: 400; text-transform: uppercase; color: $black; }
+}
+
+
+/* RECOVER PASS */
+.fg-recoverPass{
+	border-top: 1px dashed #ccc; padding-top: 40px;
+	.fg-form-agree{ padding: 40px 0; }
+}
+
+
+/* CONTACT FORM */
+.fg-form-eContact{ padding-bottom: 40px; }
+.fg-form-textarea{
+	margin: 15px 0; padding: 0 20px;
+	label{ display: block; font-size: 14px; font-weight: 400; color: $grey; }
+	textarea{ display: block; width: 100%; margin: 0; padding: 0 5px; border: 1px solid #ccc; color: $grey; resize: none; }
+}
+.fg-eContact-check{
+	.parts{ vertical-align: middle; padding: 0 20px; }
+	.fg-form-captcha{ text-align: left; }
+}
+
+#fg-partners{
+	padding: 60px 0;
+	h3{ display: block; margin: 0; margin-bottom: 30px; font-size: 20px; font-weight: 400; text-align: center; text-transform: uppercase; color: $grey; }
+}
+.fg-partnersList{
+	@include resetUL(); padding: 0 50px;
+	li{ height: auto; }
+	a{ display: block; text-decoration: none; }
+	img{ display: block; width: 95%; max-width: 120px; height: auto; max-height: 100px; margin: 0 auto; }
+	.slick-arrow{ display: block; width: 50px; height: 50px; margin-top: -25px; font-size: 45px; line-height: 50px; text-align: center; color: #ccc; position: absolute; top: 50%; z-index: 2; cursor: pointer; }
+	.slick-prev{ left: 0; }
+	.slick-next{ right: 0; }
+}
+
+
+/* LOGIN */
+#fg-loginBox{
+	display: none; width: 180px; height: auto; margin: 0; padding: 15px; border-top: 2px solid $green; font-size: 12px; background: #000; color: #fff; position: absolute; top: 90%; right: 10px; z-index: 3;
+	&::before{ content: " "; display: block; width: 0; height: 0; margin-left: -3px; border: solid 7px transparent; border-bottom-color: $green; position: absolute; top: -15px; left: 50%; }
+	.fg-loginBox-input{
+		display: block; margin-bottom: 10px;
+		label{ display: block; font-weight: 400; line-height: 1; }
+		input{ display: block; width: 100%; height: 20px; line-height: 20px; text-align: left; color: $grey; }
+	}
+	.fg-loginBox-buttons{
+		font-size: 11px;
+		a{ display: block; height: auto; margin: 0; padding: 0; font-size: 11px; line-height: 1; text-transform: none; color: $greent; }
+		.fg-loginBox-forgot{ margin-bottom: 10px; padding: 5px 0; border-bottom: 1px solid $green; color: #fff; }
+		p{ display: block; margin: 0; }
+		.button{ display: block; width: 100%; margin-top: 10px; font-size: 12px; }
+	}
+}
+
+
 
 /*--------------------------------------------------------------------------------
 	JUMAGRID MEDIA QUERIES - (NON-MOBILE FIRST METHOD)
@@ -915,6 +1038,10 @@
 	#fg-blogDetailArt{ padding: 40px 20px; }
 	.fg-blogDetail-comments,
 	.fg-blogDetail-asideArts{ padding: 20px; }
+
+	.fg-form-agree{ margin-top: 20px; }
+
+	.fg-profile-dataCol{ margin-bottom: 40px; }
 
 }
 @media only screen and (max-width: 679px) {
@@ -1122,6 +1249,28 @@
 		.blog-slide-desc{ font-size: 14px; }
 	}
 
+	.fg-form-register{ padding: 0; padding-bottom: 20px; }
+	.fg-register-borderForm{ padding: 20px 0; }
+	.fg-form-input{ margin: 0; margin-bottom: 10px; }
+	.fg-register-checknews{
+		padding: 20px 0;
+		.parts{ padding: 0 20px; }
+	}
+	.fg-form-check-box{ width: 49%; }
+	.fg-form-captcha{
+		padding: 20px;
+		.g-recaptcha{ width: 100%; overflow: hidden; }
+	}
+
+	.fg-profile-dataCol{ padding: 0; text-align: center; }
+	.fg-profile-data figure{ margin-bottom: 20px; }
+
+	.fg-recoverPass .fg-form-agree{ padding: 20px 0; }
+
+	.fg-form-eContact{ padding: 0 !important; padding-bottom: 40px !important; }
+	.fg-eContact-check .fg-form-captcha{ padding: 20px 0; }
+	#fg-partners{ padding: 40px 0; }
+
 }
 @media only screen and (max-width: 419px) {
 
@@ -1138,5 +1287,7 @@
 	.blog-sliderList{
 		.makeBg{ padding-top: 60%; }
 	}
+
+	.fg-form-register{ padding: 0 !important; padding-bottom: 20px !important; }
 
 }

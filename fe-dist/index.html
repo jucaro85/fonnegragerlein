@@ -1,0 +1,723 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+      <meta name="description" content="">
+      <title>Fonnegra Gerlein</title>
+      
+      <!-- MODERNIZR -->
+         <script src="includes/js-modernizr.js"></script>
+
+      <!-- CSS -->
+
+         <link rel="stylesheet" href="includes/css-plugins.css">
+
+         <!-- Fonts -->
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+         <!-- Main Styles -->
+            <link rel="stylesheet" href="includes/css-main.css">
+
+      <!-- JAVASCRIPT -->
+         <script src="includes/js-jquery.js"></script>
+
+         <script src="includes/js-plugins.js"></script>
+
+         <!-- Main Scripts -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+            <script src="includes/js-main.js"></script>
+
+   </head>
+
+   <body>
+      <!--[if lt IE 8]>
+         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <!-- HEADER -->
+      <div id="fg-header" class="fg-headerHome">
+         <header class="clearfix">
+            <div id="fg-mainLogo">
+               <a href="#">
+                  <img src="http://www.fonnegragerlein.com/media/logo-inmobiliaria.png" />
+               </a>
+            </div>
+            <div id="fg-rspvBtn">
+               <a href="#">
+                  <span></span>
+               </a>
+            </div>
+            <div id="fg-mainMenu">
+               <ul>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Inicio</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Proyectos</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Club de inversionistas</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Avalúos</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Blog</a></li>
+                  <li class="fg-mainMenu-item"><a class="fg-mainMenu-link" href="#">Corporativo</a></li>
+               </ul>
+            </div>
+            <div id="fg-userAccess">
+               <ul>
+                  <li><a href="#">Acceso clientes</a></li>
+                  <li><a href="#fg-loginBox" id="fg-toggle-loginBox">Iniciar sesion</a></li>
+               </ul>
+               <div id="fg-loginBox" class="text-center">
+                  <form action="">
+                     <div class="fg-loginBox-input">
+                        <label for="fg-login-user">Usuario</label>
+                        <input id="fg-login-user" type="email">
+                     </div>
+                     <div class="fg-loginBox-input">
+                        <label for="fg-login-pass">Contraseña</label>
+                        <input id="fg-login-pass" type="password">
+                     </div>
+                     <div class="fg-loginBox-buttons">
+                        <a href="#" class="fg-loginBox-forgot">¿Olvidaste tu contraseña?</a>
+                        <p>Si no tiene cuenta <a href="#">registrese aquí</a></p>
+                        <button class="button button-black" type="submit">Iniciar sesión</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            
+         </header>
+      </div>
+      <!-- /HEADER -->
+
+      <section id="fg-mainBanner">
+         <figure id="fg-slickHome">
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1446141788762-7388aa611e72')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1470485661945-c52d58c91f51')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1442406964439-e46ab8eff7c4')"></div>
+            </div>
+            <div class="fg-slickHome-item">
+               <div class="fg-slickHome-pic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1470298455676-c71fac677476')"></div>
+            </div>
+         </figure>
+         <div id="fg-formFinder-home">
+            <div class="fg-formFinder">
+               <h1 class="fg-formFinder-title">Encuentre el inmueble perfecto</h1>
+               <div class="fg-formFinder-cont">
+                  <div class="fg-formFinder-input fg-formFinder-inputShort fg-formFinder-select fg-select">
+                     <select>
+                        <option selected>Comprar</option>
+                        <option>Vender</option>
+                        <option>Arrendar</option>
+                     </select>
+                  </div>
+                  <div class="fg-formFinder-input fg-formFinder-inputLong fg-formFinder-select fg-select">
+                     <select>
+                        <option selected disabled>Tipo de inmueble</option>
+                        <option>Vivienda</option>
+                        <option>Comercial</option>
+                        <option>Industrial</option>
+                        <option>Tierras</option>
+                     </select>
+                  </div>
+                  <div class="fg-formFinder-input fg-formFinder-inputLong fg-formFinder-select fg-select">
+                     <select>
+                        <option selected>¿Dónde?</option>
+                        <option>Bogotá</option>
+                        <option>Cali</option>
+                        <option>Cartagena</option>
+                     </select>
+                  </div>
+                  <div class="fg-formFinder-input fg-formFinder-btn">
+                     <span class="fa fa-search"></span>
+                     <input class="btn" type="submit" name="">
+                     <span class="fg-formFinder-btn-txt">Buscar</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-- ESTATES GRID -->
+      <section id="fg-featuredEstates">
+
+         <div class="fg-featuredEstates-intro fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Propiedades Destacadas</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas non dolorem ipsam totam, facere placeat velit cum assumenda. Aliquam recusandae vero officia exercitationem, sapiente nihil dolores praesentium eos omnis.</p>
+               </div>
+               <div class="fg-estatesGrid-tabButtons">
+                  <a href="#" class="button active">Propiedades en venta</a>
+                  <a href="#" class="button">Propiedades en arriendo</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="clearfix fg-estatesGrid">
+            <div class="l-3-5ths m-3-5ths s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o act" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-2-5ths m-2-5ths s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-2-5ths m-2-5ths s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-3-5ths m-3-5ths s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-estatesItem">
+               <article class="fg-estatesItem-art">
+                  <span class="fg-estatesItem-category" title="Dúplex">
+                     <img src="media/icocat-01.png" alt="Dúplex">
+                  </span>
+                  <span class="fg-estatesItem-price">$150.000.000</span>
+                  <a href="#" class="fg-estatesItem-addToFav fa fa-heart-o" title="Agregar a favoritos"></a>
+                  <ul class="fg-estateItem-gallery">
+                     <li>
+                        <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                     </li>
+                  </ul>
+                  <div class="fg-estatesItem-desc">
+                     <h2><a href="#">Venta Apartamento Bogotá</a></h2>
+                     <ul class="fg-estatesItem-data">
+                        <li>3 habitaciones</li>
+                        <li>2 baños</li>
+                        <li>87 m<sup>2</sup></li>
+                     </ul>
+                  </div>
+               </article>
+            </div>
+         </div>
+
+         <div class="text-center fg-estatesGrid-loadMore">
+            <a href="#" class="button">Ver más propiedades</a>
+         </div>
+
+      </section>
+      <!-- /ESTATES GRID -->
+
+
+      <!-- INTRODUCING FG HOME -->
+      <section id="fg-introductionHome">
+         <div class="fg-introHome-pic">
+            <div class="coverBg" style="background-image:url('https://hd.unsplash.com/photo-1430285561322-7808604715df')"></div>
+            <div class="smallContainer fg-introHome-cont">
+               <h1 class="fg-introHome-title">Fonnegra Gerlein</h1>
+               <div class="fg-introHome-text">
+                  <p>Fonnegra Gerlein, fundada por Carlos Fonnegra y Margarita Torres, ha desarrollado un amplio conocimiento en el sector inmobiliario durante las últimas tres décadas y se ha posicionado como un referente de confianza brindando asesoría personalizada en finca raíz a través de los servicios de venta y arrendamiento.</p>
+               </div>
+               <a href="#" class="button button-white">Conozca más sobre nosotros</a>
+            </div>
+         </div>
+         <div class="container">
+            <ul class="fg-introHome-list clearfix inlineParts text-center">
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item texto">
+                  <div class="fg-introHome-itemPic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1420393438053-4defbbd0c7a1')"></div>
+                  <h2 class="fg-introHome-itemTitle">Marketing inmobiliario</h2>
+                  <p class="fg-introHome-itemText">Estudiamos cada proyecto individualmente para garantizar un resultado acorde con sus expectativas para mostrar su inmueble.</p>
+                  <a href="#" class="button">Ver más</a>
+               </li>
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item texto">
+                  <div class="fg-introHome-itemPic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1469022563428-aa04fef9f5a2')"></div>
+                  <h2 class="fg-introHome-itemTitle">Seguros de arrendamiento</h2>
+                  <p class="fg-introHome-itemText">Garantizamods el pago oportunos de renta, cuotas de administración e impuestos a través de nuestra alianza con Seguros Bolívar. </p>
+                  <a href="#" class="button">Ver más</a>
+               </li>
+               <li class="m-1-3rd s-2-3rds xs-1 parts fg-introHome-item texto">
+                  <div class="fg-introHome-itemPic coverBg" style="background-image:url('https://hd.unsplash.com/photo-1450101499163-c8848c66ca85')"></div>
+                  <h2 class="fg-introHome-itemTitle">Soporte Jurídico</h2>
+                  <p class="fg-introHome-itemText">Cuente con toda nuestra experiencia jurídica en la gestión de contratos y cobros administrativos y/o judiciales. </p>
+                  <a href="#" class="button">Ver más</a>
+               </li>
+               
+            </ul>
+         </div>
+      </section>
+      <!-- /INTRODUCING FG HOME -->
+
+
+      <!-- SERVICES -->
+      <section id="fg-services">
+
+         <div class="fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Servicios Inmobiliarios</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Mauris vehicula, mi sed hendrerit pulvinar, orci tortor interdum odio, a porta tellus turpis sed velit. Fusce vehicula lacus venenatis ligula scelerisque, quis consectetur libero suscipit. Morbi fermentum gravida viverra.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container clearfix">
+            <div class="m-1-half s-1 parts fg-services-item">
+               <article class="clearfix inlineParts">
+                  <div class="m-4-7ths s-1-half xs-1 parts fg-services-itemDescCol">
+                     <h2>Vivienda</h2>
+                     <div class="fg-services-itemDesc">
+                        <p>Proin quam nunc, tincidunt sit amet bibendum a, tempus sed ex. Sed quis imperdiet ante. Aliquam quis egestas enim, cursus dictum eros. Sed ut dignissim sem. Morbi ultricies in arcu at vulputate.</p>
+                     </div>
+                  </div>
+                  <div class="m-3-7ths s-1-half xs-1 parts fg-services-itemIconCol">
+                     <img src="media/fg-service01.png" alt="Vivienda">
+                  </div>
+               </article>
+            </div>
+            <div class="m-1-half s-1 parts fg-services-item">
+               <article class="clearfix inlineParts">
+                  <div class="m-4-7ths s-1-half xs-1 parts fg-services-itemDescCol">
+                     <h2>Industrial</h2>
+                     <div class="fg-services-itemDesc">
+                        <p>Proin quam nunc, tincidunt sit amet bibendum a, tempus sed ex. Sed quis imperdiet ante. Aliquam quis egestas enim, cursus dictum eros. Sed ut dignissim sem. Morbi ultricies in arcu at vulputate.</p>
+                     </div>
+                  </div>
+                  <div class="m-3-7ths s-1-half xs-1 parts fg-services-itemIconCol">
+                     <img src="media/fg-service02.png" alt="Industrial">
+                  </div>
+               </article>
+            </div>
+            <div class="m-1-half s-1 parts fg-services-item">
+               <article class="clearfix inlineParts">
+                  <div class="m-4-7ths s-1-half xs-1 parts fg-services-itemDescCol">
+                     <h2>Comercial</h2>
+                     <div class="fg-services-itemDesc">
+                        <p>Proin quam nunc, tincidunt sit amet bibendum a, tempus sed ex. Sed quis imperdiet ante. Aliquam quis egestas enim, cursus dictum eros. Sed ut dignissim sem. Morbi ultricies in arcu at vulputate.</p>
+                     </div>
+                  </div>
+                  <div class="m-3-7ths s-1-half xs-1 parts fg-services-itemIconCol">
+                     <img src="media/fg-service03.png" alt="Comercial">
+                  </div>
+               </article>
+            </div>
+            <div class="m-1-half s-1 parts fg-services-item">
+               <article class="clearfix inlineParts">
+                  <div class="m-4-7ths s-1-half xs-1 parts fg-services-itemDescCol">
+                     <h2>Tierras</h2>
+                     <div class="fg-services-itemDesc">
+                        <p>Proin quam nunc, tincidunt sit amet bibendum a, tempus sed ex. Sed quis imperdiet ante. Aliquam quis egestas enim, cursus dictum eros. Sed ut dignissim sem. Morbi ultricies in arcu at vulputate.</p>
+                     </div>
+                  </div>
+                  <div class="m-3-7ths s-1-half xs-1 parts fg-services-itemIconCol">
+                     <img src="media/fg-service04.png" alt="Tierras">
+                  </div>
+               </article>
+            </div>
+         </div>
+
+         <div class="fg-services-contact clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>¿Tiene un Inmueble?</h2>
+               <div class="fg-services-contactDesc">
+                  <p>Si desea que Fonnegra Gerlein comercialice su inmueble contáctenos para poder asesorarlo.</p>
+               </div>
+               <div class="fg-services-contactCta">
+                  <a href="#" class="button">Contáctenos</a>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <!-- /SERVICES -->
+
+      <!-- CONTACT US -->
+      <section id="fg-homecontact">
+
+         <div class="fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Contáctenos</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Déjenos su mensaje.<br>uno de nuestros asesores se pondrá en contacto con usted lo más pronto posible.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <form action="">
+               <div class="clearfix fg-homecontact-form">
+                  <div class="m-1-half s-1 xs-1 parts">
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-name">Nombre completo</label>
+                        <input id="fg-homecontact-input-name" type="text">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-mail">Correo electrónico</label>
+                        <input id="fg-homecontact-input-mail" type="email">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-phone">Teléfono</label>
+                        <input id="fg-homecontact-input-phone" type="text">
+                     </div>
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-subject">Asunto</label>
+                        <div class="fg-select">
+                           <select id="fg-homecontact-input-subject">
+                              <option value="A">Inmobiliaria</option>
+                              <option value="B">Avalúos</option>
+                              <option value="C">Tierras</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="m-1-half s-1 xs-1 parts">
+                     <div class="fg-homecontact-input">
+                        <label for="fg-homecontact-input-message">Mensaje</label>
+                        <textarea id="fg-homecontact-input-message" rows="7"></textarea>
+                     </div>
+                     <div class="fg-homecontact-agree">
+                        <input type="checkbox" id="fg-homecontact-input-agree">
+                        <label for="fg-homecontact-input-agree">Acepto que he leído la <a href="#">política de privacidad</a>.</label>
+                     </div>
+                     <div class="fg-homecontact-captcha">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                     </div>
+                     <div class="fg-homecontact-cta">
+                        <button class="button" type="submit">Contactarme</button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+
+      </section>
+      <!-- /CONTACT US -->
+
+      <!-- BLOG -->
+      <section id="fg-homeblog">
+
+         <div class="fg-homesection-intro clearfix">
+            <div class="m-4-6ths s-5-6ths xs-1 parts centerPart text-center">
+               <h2>Blog</h2>
+               <div class="fg-homesection-introDesc">
+                  <p>Mauris vehicula, mi sed hendrerit pulvinar, orci tortor interdum odio, a porta tellus turpis sed velit. Fusce vehicula lacus venenatis ligula scelerisque, quis consectetur libero suscipit. Morbi fermentum gravida viverra.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="fg-homeblog-artlist clearfix inlineParts">
+            <div class="l-2-5ths m-2-5ths s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-3-5ths m-3-5ths s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+            <div class="l-1-4th m-1-3rd s-1-half xs-1 parts fg-homeblog-item">
+               <article>
+                  <a href="#" class="makeBg" style="background-image: url(media/sample-estate01.jpg);"></a>
+                  <h3>El mejor momento para invertir: XI Gran Salón Inmobiliario 2016 - Corferias</h3>
+                  <time datetime="2016-06-02">02 de Junio de 2016</time>
+                  <span class="fg-homeblog-itemCategory">Inversion</span>
+                  <div class="fg-homeblog-itemDesc">
+                     <p>Hágalo de forma fácil y segura visitando el XI Gran Salón inmobiliario, la vitrina de inmuebles nuevos y usados. Bogotá del 25 al 28 de agosto de 2016.</p>
+                  </div>
+                  <div class="fg-homeblog-itemCta">
+                     <a href="#" class="button">Leer más</a>
+                  </div>
+               </article>
+            </div>
+         </div>
+
+         <div class="fg-homeblog-loadmore text-center">
+            <a href="#" class="button">Ver más artículos</a>
+         </div>
+
+      </section>
+      <!-- /BLOG -->
+
+      <!-- FOOTER -->
+      <footer id="fg-footer">
+         <div class="container">
+            <div class="fg-footerFirstRow clearfix">
+               <div class="m-1-3rd s-1-half parts">
+                  <h2 class="fg-footerTitle">Servicios</h2>
+                  <ul class="fg-footerList">
+                     <li><a href="#">Proyectos</a></li>
+                     <li><a href="#">Club de inversionistas</a></li>
+                     <li><a href="#">Avalúos</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Corporativo</a></li>
+                     <li><a href="#" class="fg-footerList-spc">Contáctenos</a></li>
+                     <li><a href="#" class="fg-footerList-spc">Acceso clientes</a></li>
+                  </ul>
+               </div>
+               <div class="m-1-3rd s-1-half parts">
+                  <h2 class="fg-footerTitle">Sucursales</h2>
+                  <div class="fg-footerText texto smallText">
+                     <p>
+                        Bogotá<br>
+                        Calle 79b # 8-40<br>
+                        (571)2 100 305 - (57) 321 330 3030 - (57) 321 3181818 - (57) 314 380 5070<br>
+                        <a href="#">info@fonnegragerlein.com</a>
+                     </p>
+                     <p>
+                        Chía<br>
+                        (571) 885 5540 - (57) 310 307 0707 - (57) 317 432 5107<br>
+                        <a href="#">info@fonnegragerlein.com</a>
+                     </p>
+                  </div>
+               </div>
+               <div class="m-1-3rd s-una parts">
+                  <h2 class="fg-footerTitle">Suscríbase a nuestro newsletter</h2>
+                  <div class="texto">
+                     <p>Reciba toda la información de FONNEGRA GERLEIN en su correo</p>
+                     <div id="fg-subsForm">
+                        <label>Correo electrónico</label>
+                        <div class="fg-input">
+                           <input type="text" name="" placeholder="tucorreo@correo.sample" />
+                        </div>
+                        <div class="fg-button">
+                           <input type="submit" class="button button-green" name="">
+                        </div>
+                        <div class="fg-acceptCheckbox">
+                           <label class="fg-checkBox">
+                              <span class="fg-checkBoxLabel">He leído y acepto las <a href="#">políticas de privacidad.</a></span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fg-footerSecondRow clearfix">
+               <div class="m-3-4ths parts">
+                  <h2 class="fg-footerTitle">Sobre Fonnegra Gerlein</h2>
+                  <div class="texto smallText">
+                     <p>Fonnegra Gerlein, fundada por Carlos Fonnegra y Margarita Torres, ha desarrollado un amplio conocimiento en el sector inmobiliario durante las últimas tres décadas y se ha posicionado como un referente de confianza brindando asesoría personalizada en finca raíz a través de los servicios de venta y arrendamiento.</p>
+                  </div>
+               </div>
+               <div class="m-1-4th parts">
+                  <h2 class="fg-footerTitle">Siganos</h2>
+                  <div class="fg-footerSocial">
+                     <a href="#" class="fa fa-facebook"></a>
+                     <a href="#" class="fa fa-twitter"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fg-backbone">
+            <a href="#"><img src="http://www.fonnegragerlein.com/media/logo-bbt.png"></a>
+         </div>
+      </footer>
+      <!-- /FOOTER -->
+      
+    </body>
+</html>
